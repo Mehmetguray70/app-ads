@@ -1,10 +1,11 @@
+<!-- index.html -->
 <!doctype html>
 <html lang="tr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ASOT Games</title>
-  <meta name="description" content="ASOT Games — bağımsız oyun stüdyosu. FuzzyBall ve Imposterr." />
+  <meta name="description" content="ASOT Games — bağımsız oyun stüdyosu. FuzzyBall, Imposterr ve yakında Footballix." />
   <link rel="icon" href="assets/favicon.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -17,109 +18,221 @@
     </a>
 
     <nav class="links">
-      <a href="#games">Games</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a href="#games" data-i18n="nav_games">Games</a>
+      <a href="#footballix" data-i18n="nav_footballix">Footballix</a>
+      <a href="#about" data-i18n="nav_about">About</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
     </nav>
+
+    <div class="navRight">
+      <button class="langBtn" id="langToggle" type="button" aria-label="Change language">
+        <span class="chip">TR</span><span class="chip ghost">EN</span>
+      </button>
+    </div>
   </header>
 
   <main>
+    <!-- HERO -->
     <section class="hero">
       <div class="heroText">
-        <p class="pill">Indie Studio • Mobile & PC</p>
-        <h1>Small team. Big ideas.</h1>
-        <p class="sub">
+        <p class="pill" data-i18n="pill">Indie Studio • Mobile & PC</p>
+
+        <h1 data-i18n="hero_title">Small team. Big ideas.</h1>
+        <p class="sub" data-i18n="hero_sub">
           ASOT Games olarak odaklı, eğlenceli ve tekrar oynanabilir oyunlar yapıyoruz.
           Aşağıdaki projelere göz at.
         </p>
 
         <div class="ctaRow">
-          <a class="btn primary" href="#games">Oyunlara Bak</a>
-          <a class="btn ghost" href="#contact">İletişim</a>
+          <a class="btn primary" href="#games" data-i18n="cta_games">Oyunlara Bak</a>
+          <a class="btn ghost" href="#contact" data-i18n="cta_contact">İletişim</a>
         </div>
 
-        <div class="stats">
-          <div class="stat"><div class="n">2</div><div class="t">Active Projects</div></div>
-          <div class="stat"><div class="n">∞</div><div class="t">Iteration</div></div>
-          <div class="stat"><div class="n">1</div><div class="t">Studio</div></div>
+        <div class="stats" role="list">
+          <div class="stat" role="listitem"><div class="n">2</div><div class="t" data-i18n="stat_projects">Aktif Proje</div></div>
+          <div class="stat" role="listitem"><div class="n">∞</div><div class="t" data-i18n="stat_iteration">İterasyon</div></div>
+          <div class="stat" role="listitem"><div class="n">1</div><div class="t" data-i18n="stat_studio">Stüdyo</div></div>
         </div>
       </div>
 
-      <div class="heoCard">
+      <!-- fixed class name: heroCard -->
+      <div class="heroCard">
         <div class="gradient"></div>
         <div class="cardInner">
-          <div class="miniTitle">Latest</div>
-          <div class="miniHeadline">Updates & Releases</div>
-          <p class="miniText">
-            Buraya sonra “son güncelleme” / “yakında çıkacaklar” gibi kısa notlar ekleyebilirsin.
+          <div class="miniTitle" data-i18n="latest_title">Latest</div>
+          <div class="miniHeadline" data-i18n="latest_headline">Updates & Releases</div>
+          <p class="miniText" data-i18n="latest_text">
+            Yeni sürümler, geliştirme notları ve “yakında” duyuruları burada.
           </p>
-          <a class="btn small" href="#games">Projeleri Gör</a>
+          <a class="btn small" href="#footballix" data-i18n="latest_btn">Footballix’e Göz At</a>
         </div>
       </div>
     </section>
 
+    <!-- GAMES -->
     <section id="games" class="section">
       <div class="sectionHead">
-        <h2>Games</h2>
-        <p>İki proje için sade ama “portfolio” gibi görünen kartlar.</p>
+        <h2 data-i18n="games_title">Games</h2>
+        <p data-i18n="games_sub">Projelerimizi tek sayfada, net bir portfolyo gibi toparladık.</p>
       </div>
 
       <div class="grid">
-        <article class="card">
-          <div class="badge">Mobile</div>
-          <h3>FuzzyBall</h3>
-          <p>Arkadaşlarını kurtar, dokunarak ilerle. Hızlı, tatlı, zorlayıcı.</p>
+        <!-- FuzzyBall -->
+        <article class="card gameCard">
+          <div class="cardTop">
+            <img class="appIcon" src="assets/fuzzyball.webp" alt="FuzzyBall icon" loading="lazy" />
+            <div class="cardTopText">
+              <div class="badge">Mobile</div>
+              <h3>FuzzyBall</h3>
+            </div>
+          </div>
+
+          <p data-i18n="fuzzy_desc">Arkadaşlarını kurtar, dokunarak ilerle. Hızlı, tatlı, zorlayıcı.</p>
+
           <div class="tags">
             <span>2D</span><span>Casual</span><span>Unity</span>
           </div>
+
           <div class="cardActions">
-            <a class="btn primary" href="fuzzyball.html">Sayfaya Git</a>
-            <a class="btn ghost" href="#" aria-disabled="true">Store (yakında)</a>
+            <a class="btn primary" target="_blank" rel="noreferrer"
+               href="https://play.google.com/store/apps/details?id=com.AsotGames.FuzzyBall&hl=tr"
+               data-i18n="btn_playstore">
+              Google Play
+            </a>
+            <a class="btn ghost" href="#" aria-disabled="true" data-i18n="btn_trailer_soon">Trailer (yakında)</a>
           </div>
         </article>
 
-        <article class="card">
-          <div class="badge alt">Party</div>
-          <h3>Imposterr</h3>
-          <p>Kelime oyunu + bluff. Arkadaş grubunu dağıtmalık sosyal oyun.</p>
+        <!-- Imposterr -->
+        <article class="card gameCard">
+          <div class="cardTop">
+            <img class="appIcon" src="assets/imposterr.webp" alt="Imposterr icon" loading="lazy" />
+            <div class="cardTopText">
+              <div class="badge alt">Party</div>
+              <h3>Imposterr</h3>
+            </div>
+          </div>
+
+          <p data-i18n="impost_desc">Kelime oyunu + bluff. Arkadaş grubunu dağıtmalık sosyal oyun.</p>
+
           <div class="tags">
             <span>Party</span><span>Multiplayer</span><span>Firebase</span>
           </div>
+
           <div class="cardActions">
-            <a class="btn primary" href="imposterr.html">Sayfaya Git</a>
-            <a class="btn ghost" href="#" aria-disabled="true">Trailer (yakında)</a>
+            <a class="btn primary" target="_blank" rel="noreferrer"
+               href="https://play.google.com/store/apps/details?id=com.AsotGames.Imposterr&hl=tr"
+               data-i18n="btn_playstore">
+              Google Play
+            </a>
+            <a class="btn ghost" href="#" aria-disabled="true" data-i18n="btn_store_soon">Store (yakında)</a>
           </div>
         </article>
       </div>
     </section>
 
+    <!-- FOOTBALLIX (coming soon) -->
+    <section id="footballix" class="section">
+      <div class="sectionHead">
+        <h2 data-i18n="fx_title">FOOTBALLIX geliyor</h2>
+        <p data-i18n="fx_sub">Futbol Kart Oyunu — kur, yükselt, kazan. Yakında.</p>
+      </div>
+
+      <div class="fxWrap">
+        <div class="fxCard">
+          <div class="fxPill" data-i18n="fx_pill">Coming Soon</div>
+          <h3 class="fxName">FOOTBALLIX</h3>
+          <p class="fxText" data-i18n="fx_text">
+            Kartlarını oluştur, taktik kur, maç maç yüksel. Koleksiyon + strateji + rekabet.
+          </p>
+
+          <div class="fxBullets">
+            <div class="fxItem"><span class="dotMini"></span><span data-i18n="fx_b1">Kart toplama & desteler</span></div>
+            <div class="fxItem"><span class="dotMini"></span><span data-i18n="fx_b2">Kısa maçlar, hızlı tempo</span></div>
+            <div class="fxItem"><span class="dotMini"></span><span data-i18n="fx_b3">Rekabetçi lig sistemi</span></div>
+          </div>
+
+          <div class="cardActions">
+            <a class="btn primary" href="#contact" data-i18n="fx_notify">Çıkınca haber ver</a>
+            <a class="btn ghost" href="#" aria-disabled="true" data-i18n="fx_trailer">Teaser (yakında)</a>
+          </div>
+        </div>
+
+        <!-- “Görsel”: inline SVG (dosya gerektirmez) -->
+        <div class="fxVisual" aria-hidden="true">
+          <svg viewBox="0 0 520 360" role="img">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="rgba(124,92,255,.95)"/>
+                <stop offset="1" stop-color="rgba(0,212,255,.85)"/>
+              </linearGradient>
+              <filter id="blur" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="18"/>
+              </filter>
+            </defs>
+
+            <!-- glow blobs -->
+            <circle cx="130" cy="110" r="90" fill="url(#g1)" opacity=".35" filter="url(#blur)"/>
+            <circle cx="390" cy="90" r="110" fill="url(#g1)" opacity=".25" filter="url(#blur)"/>
+            <circle cx="330" cy="260" r="120" fill="url(#g1)" opacity=".18" filter="url(#blur)"/>
+
+            <!-- cards -->
+            <g transform="translate(85 90) rotate(-8)">
+              <rect x="0" y="0" rx="18" ry="18" width="170" height="230" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.14)"/>
+              <rect x="18" y="18" rx="14" ry="14" width="134" height="98" fill="rgba(0,0,0,.16)" stroke="rgba(255,255,255,.10)"/>
+              <rect x="18" y="128" rx="12" ry="12" width="90" height="14" fill="rgba(255,255,255,.10)"/>
+              <rect x="18" y="152" rx="12" ry="12" width="120" height="14" fill="rgba(255,255,255,.08)"/>
+              <rect x="18" y="176" rx="12" ry="12" width="76" height="14" fill="rgba(255,255,255,.06)"/>
+            </g>
+            <g transform="translate(210 78) rotate(6)">
+              <rect x="0" y="0" rx="18" ry="18" width="190" height="255" fill="rgba(255,255,255,.07)" stroke="rgba(255,255,255,.18)"/>
+              <rect x="20" y="20" rx="14" ry="14" width="150" height="112" fill="rgba(0,0,0,.18)" stroke="rgba(255,255,255,.10)"/>
+              <rect x="20" y="146" rx="12" ry="12" width="120" height="16" fill="rgba(255,255,255,.12)"/>
+              <rect x="20" y="174" rx="12" ry="12" width="150" height="16" fill="rgba(255,255,255,.10)"/>
+              <rect x="20" y="202" rx="12" ry="12" width="98" height="16" fill="rgba(255,255,255,.08)"/>
+            </g>
+
+            <!-- ball mark -->
+            <g transform="translate(360 245)">
+              <circle cx="0" cy="0" r="42" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.18)"/>
+              <path d="M-16,-4 L0,-20 L16,-4 L10,14 L-10,14 Z" fill="rgba(255,255,255,.18)"/>
+              <circle cx="0" cy="0" r="10" fill="rgba(0,0,0,.20)"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
     <section id="about" class="section">
       <div class="sectionHead">
-        <h2>About</h2>
-        <p>Kısa, net, güven veren bir açıklama.</p>
+        <h2 data-i18n="about_title">About</h2>
+        <p data-i18n="about_sub">Oyun geliştirme firmasıyız. Küçük ekibiz, üretim hızımız yüksek.</p>
       </div>
 
       <div class="panel">
-        <p>
-          ASOT Games, küçük bir ekibin geliştirdiği bağımsız oyun projeleridir.
+        <p data-i18n="about_text">
+          ASOT Games, mobil ve PC platformları için oyun geliştiren bağımsız bir stüdyodur.
           Hedefimiz: hızlı öğrenme, sık güncelleme ve oyuncu geri bildirimine göre gelişen oyunlar.
         </p>
         <ul class="bullets">
-          <li>Unity ile geliştirme</li>
-          <li>Mobil öncelikli tasarım</li>
-          <li>Net arayüz, hızlı onboarding</li>
+          <li data-i18n="about_b1">Unity ile geliştirme</li>
+          <li data-i18n="about_b2">Mobil öncelikli tasarım</li>
+          <li data-i18n="about_b3">Net arayüz, hızlı onboarding</li>
         </ul>
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact" class="section">
       <div class="sectionHead">
-        <h2>Contact</h2>
-        <p>Şimdilik basit tut: mail + sosyal link.</p>
+        <h2 data-i18n="contact_title">Contact</h2>
+        <p data-i18n="contact_sub">Mail ya da telefonla ulaşabilirsin.</p>
       </div>
 
       <div class="contact">
         <a class="btn primary" href="mailto:hello@asotgames.com.tr">hello@asotgames.com.tr</a>
+        <a class="btn ghost" href="tel:+905396606680">0 (539) 660 66 80</a>
         <a class="btn ghost" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
       </div>
     </section>
@@ -128,11 +241,121 @@
   <footer class="footer">
     <span>© <span id="y"></span> ASOT Games</span>
     <span class="dot">•</span>
-    <a href="#">Privacy</a>
+    <a href="#" data-i18n="privacy">Privacy</a>
   </footer>
 
   <script>
+    // year
     document.getElementById("y").textContent = new Date().getFullYear();
+
+    // i18n
+    const dict = {
+      tr: {
+        nav_games: "Oyunlar",
+        nav_footballix: "Footballix",
+        nav_about: "Hakkımızda",
+        nav_contact: "İletişim",
+        pill: "Indie Studio • Mobile & PC",
+        hero_title: "Small team. Big ideas.",
+        hero_sub: "ASOT Games olarak odaklı, eğlenceli ve tekrar oynanabilir oyunlar yapıyoruz. Aşağıdaki projelere göz at.",
+        cta_games: "Oyunlara Bak",
+        cta_contact: "İletişim",
+        stat_projects: "Aktif Proje",
+        stat_iteration: "İterasyon",
+        stat_studio: "Stüdyo",
+        latest_title: "Güncel",
+        latest_headline: "Duyurular & Çıkışlar",
+        latest_text: "Yeni sürümler, geliştirme notları ve “yakında” duyuruları burada.",
+        latest_btn: "Footballix’e Göz At",
+        games_title: "Oyunlar",
+        games_sub: "Projelerimizi tek sayfada, net bir portfolyo gibi toparladık.",
+        fuzzy_desc: "Arkadaşlarını kurtar, dokunarak ilerle. Hızlı, tatlı, zorlayıcı.",
+        impost_desc: "Kelime oyunu + bluff. Arkadaş grubunu dağıtmalık sosyal oyun.",
+        btn_playstore: "Google Play",
+        btn_trailer_soon: "Trailer (yakında)",
+        btn_store_soon: "Store (yakında)",
+        fx_title: "FOOTBALLIX geliyor",
+        fx_sub: "Futbol Kart Oyunu — kur, yükselt, kazan. Yakında.",
+        fx_pill: "Yakında",
+        fx_text: "Kartlarını oluştur, taktik kur, maç maç yüksel. Koleksiyon + strateji + rekabet.",
+        fx_b1: "Kart toplama & desteler",
+        fx_b2: "Kısa maçlar, hızlı tempo",
+        fx_b3: "Rekabetçi lig sistemi",
+        fx_notify: "Çıkınca haber ver",
+        fx_trailer: "Teaser (yakında)",
+        about_title: "Hakkımızda",
+        about_sub: "Oyun geliştirme firmasıyız. Küçük ekibiz, üretim hızımız yüksek.",
+        about_text: "ASOT Games, mobil ve PC platformları için oyun geliştiren bağımsız bir stüdyodur. Hedefimiz: hızlı öğrenme, sık güncelleme ve oyuncu geri bildirimine göre gelişen oyunlar.",
+        about_b1: "Unity ile geliştirme",
+        about_b2: "Mobil öncelikli tasarım",
+        about_b3: "Net arayüz, hızlı onboarding",
+        contact_title: "İletişim",
+        contact_sub: "Mail ya da telefonla ulaşabilirsin.",
+        privacy: "Gizlilik"
+      },
+      en: {
+        nav_games: "Games",
+        nav_footballix: "Footballix",
+        nav_about: "About",
+        nav_contact: "Contact",
+        pill: "Indie Studio • Mobile & PC",
+        hero_title: "Small team. Big ideas.",
+        hero_sub: "We build focused, fun, replayable games at ASOT Games. Take a look at our projects below.",
+        cta_games: "View Games",
+        cta_contact: "Contact",
+        stat_projects: "Active Projects",
+        stat_iteration: "Iteration",
+        stat_studio: "Studio",
+        latest_title: "Latest",
+        latest_headline: "Updates & Releases",
+        latest_text: "Patch notes, launches, and what’s coming next—right here.",
+        latest_btn: "See Footballix",
+        games_title: "Games",
+        games_sub: "A clean portfolio-style overview of our projects.",
+        fuzzy_desc: "Save your friends with quick taps. Cute, fast, and challenging.",
+        impost_desc: "Word game + bluff. A social party game that starts arguments (in a good way).",
+        btn_playstore: "Google Play",
+        btn_trailer_soon: "Trailer (soon)",
+        btn_store_soon: "Store (soon)",
+        fx_title: "FOOTBALLIX is coming",
+        fx_sub: "Football Card Game — build, upgrade, win. Coming soon.",
+        fx_pill: "Coming Soon",
+        fx_text: "Build your deck, craft tactics, climb match by match. Collection + strategy + competition.",
+        fx_b1: "Card collecting & decks",
+        fx_b2: "Short matches, fast pace",
+        fx_b3: "Competitive league system",
+        fx_notify: "Notify me",
+        fx_trailer: "Teaser (soon)",
+        about_title: "About",
+        about_sub: "We’re a game development studio. Small team, fast output.",
+        about_text: "ASOT Games is an indie studio developing games for mobile and PC. We iterate fast and improve based on player feedback.",
+        about_b1: "Built with Unity",
+        about_b2: "Mobile-first design",
+        about_b3: "Clear UI, fast onboarding",
+        contact_title: "Contact",
+        contact_sub: "Reach out via email or phone.",
+        privacy: "Privacy"
+      }
+    };
+
+    let lang = "tr";
+    const btn = document.getElementById("langToggle");
+    const applyLang = (l) => {
+      lang = l;
+      document.documentElement.lang = l === "tr" ? "tr" : "en";
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (dict[l][key]) el.textContent = dict[l][key];
+      });
+
+      // toggle chips look
+      const chips = btn.querySelectorAll(".chip");
+      chips[0].classList.toggle("ghost", l !== "tr");
+      chips[1].classList.toggle("ghost", l !== "en");
+    };
+
+    btn.addEventListener("click", () => applyLang(lang === "tr" ? "en" : "tr"));
+    applyLang("tr");
   </script>
 </body>
 </html>
