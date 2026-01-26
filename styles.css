@@ -44,7 +44,7 @@ a[aria-disabled="true"]{pointer-events:none; opacity:.55}
   background: linear-gradient(135deg, var(--accent), var(--accent2));
   color:#07101b;
   font-weight:900;
-  letter-spacing:.5px;
+  letter-spacing:.6px;
 }
 .brandText{font-weight:800; letter-spacing:.3px}
 
