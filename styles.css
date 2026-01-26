@@ -1,3 +1,4 @@
+/* styles.css */
 :root{
   --bg:#0b0f17;
   --panel:#0f1624;
@@ -34,9 +35,10 @@ a[aria-disabled="true"]{pointer-events:none; opacity:.55}
   display:flex;
   align-items:center;
   justify-content:space-between;
+  gap:12px;
 }
 
-.brand{display:flex; align-items:center; gap:10px}
+.brand{display:flex; align-items:center; gap:10px; min-width:max-content}
 .logo{
   width:42px; height:42px;
   display:grid; place-items:center;
@@ -51,6 +53,29 @@ a[aria-disabled="true"]{pointer-events:none; opacity:.55}
 .links{display:flex; gap:18px; color:var(--muted); font-weight:600}
 .links a{padding:8px 10px; border-radius:12px}
 .links a:hover{background:rgba(255,255,255,.06); color:var(--text)}
+
+.navRight{display:flex; align-items:center; gap:10px}
+.langBtn{
+  display:inline-flex;
+  gap:8px;
+  padding:6px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background: rgba(255,255,255,.03);
+  cursor:pointer;
+}
+.chip{
+  padding:8px 10px;
+  border-radius:999px;
+  font-weight:900;
+  font-size:12px;
+  background: rgba(255,255,255,.06);
+  color: var(--text);
+}
+.chip.ghost{
+  background: transparent;
+  color: var(--muted);
+}
 
 main{max-width:var(--max); margin:0 auto; padding:0 var(--pad) 70px}
 
@@ -87,7 +112,11 @@ h1{font-size: clamp(34px, 5vw, 56px); margin:0 0 12px; line-height:1.05}
   font-weight:800;
   letter-spacing:.2px;
 }
-.btn:hover{transform: translateY(-1px); transition:.15s ease; box-shadow: 0 10px 30px rgba(0,0,0,.25)}
+.btn:hover{
+  transform: translateY(-1px);
+  transition:.15s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25)
+}
 .btn.primary{
   border:none;
   background: linear-gradient(135deg, var(--accent), var(--accent2));
@@ -149,6 +178,7 @@ h1{font-size: clamp(34px, 5vw, 56px); margin:0 0 12px; line-height:1.05}
   border:1px solid var(--line);
   background: rgba(255,255,255,.03);
 }
+
 .badge{
   display:inline-flex;
   padding:6px 10px;
@@ -163,50 +193,6 @@ h1{font-size: clamp(34px, 5vw, 56px); margin:0 0 12px; line-height:1.05}
   background: rgba(0,212,255,.14);
   border:1px solid rgba(0,212,255,.30);
 }
-.card h3{margin:12px 0 8px; font-size:20px}
-.card p{margin:0 0 12px; color:var(--muted); line-height:1.55}
 
-.tags{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:14px}
-.tags span{
-  padding:7px 10px;
-  border-radius:999px;
-  border:1px solid var(--line);
-  background: rgba(255,255,255,.03);
-  color: var(--muted);
-  font-weight:800;
-  font-size:12px;
-}
-
-.cardActions{display:flex; gap:10px; flex-wrap:wrap}
-
-.panel{
-  margin-top:16px;
-  padding:18px;
-  border-radius:var(--radius);
-  border:1px solid var(--line);
-  background: rgba(255,255,255,.03);
-  color:var(--muted);
-  line-height:1.65;
-}
-.bullets{margin:12px 0 0; padding-left:18px}
-.bullets li{margin:6px 0}
-
-.contact{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px}
-
-.footer{
-  max-width:var(--max);
-  margin:0 auto;
-  padding:18px var(--pad) 26px;
-  color:var(--muted);
-  display:flex;
-  gap:10px;
-  align-items:center;
-}
-.footer a{color:var(--muted); text-decoration:underline}
-.dot{opacity:.55}
-
-@media (max-width: 900px){
-  .hero{grid-template-columns: 1fr}
-  .grid{grid-template-columns: 1fr}
-  .links{display:none}
-}
+.card h3{margin:10px 0 6px; font-size:20px}
+.card p{margin:0 0 12px; color:var(--
