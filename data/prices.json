@@ -1,1 +1,37 @@
+{
+  "updatedAt": "2026-03-22T12:00:00Z",
+  "currency": "TRY",
+  "alcohol": [
+    {
+      "id": "jack-daniels-old-no-7-70cl",
+      "brand": "Jack Daniel's",
+      "name": "Old No. 7",
+      "size": "70cl",
+      "price": 1250
+    },
+    {
+      "id": "chivas-regal-12-70cl",
+      "brand": "Chivas Regal",
+      "name": "12",
+      "size": "70cl",
+      "price": 1450
+    }
+  ],
+  "tobacco": [
+    {
+      "id": "marlboro-red-20",
+      "brand": "Marlboro",
+      "name": "Red",
+      "pack": "20",
+      "price": 90
+    },
+    {
+      "id": "parliament-night-blue-20",
+      "brand": "Parliament",
+      "name": "Night Blue",
+      "pack": "20",
+      "price": 92
+    }
+  ]
+}
 
