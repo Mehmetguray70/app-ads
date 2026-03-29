@@ -1,0 +1,292 @@
+diff --git a/c:\Users\ASUS\Desktop\PriceCompare\privacy-policy.html b/c:\Users\ASUS\Desktop\PriceCompare\privacy-policy.html
+new file mode 100644
+--- /dev/null
++++ b/c:\Users\ASUS\Desktop\PriceCompare\privacy-policy.html
+@@ -0,0 +1,287 @@
++<!doctype html>
++<html lang="en">
++  <head>
++    <meta charset="utf-8" />
++    <meta name="viewport" content="width=device-width, initial-scale=1" />
++    <title>PriceCompare Privacy Policy / Gizlilik Politikasi</title>
++    <style>
++      :root {
++        color-scheme: light;
++        --bg: #0f0f10;
++        --card: #ffffff;
++        --text: #151515;
++        --muted: #61656b;
++        --line: #e7e7e7;
++        --accent: #0b57d0;
++      }
++
++      * {
++        box-sizing: border-box;
++      }
++
++      body {
++        margin: 0;
++        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
++        background: linear-gradient(180deg, #0f0f10 0%, #19191b 100%);
++        color: var(--text);
++      }
++
++      .wrap {
++        max-width: 940px;
++        margin: 0 auto;
++        padding: 32px 16px 48px;
++      }
++
++      .card {
++        background: var(--card);
++        border-radius: 24px;
++        padding: 28px;
++        box-shadow: 0 18px 60px rgba(0, 0, 0, 0.18);
++      }
++
++      h1 {
++        margin: 0;
++        font-size: 34px;
++        line-height: 1.1;
++      }
++
++      .subtitle {
++        margin: 10px 0 0;
++        color: var(--muted);
++        font-size: 15px;
++      }
++
++      .grid {
++        display: grid;
++        grid-template-columns: 1fr 1fr;
++        gap: 24px;
++        margin-top: 28px;
++      }
++
++      .panel {
++        border: 1px solid var(--line);
++        border-radius: 20px;
++        padding: 22px;
++      }
++
++      h2 {
++        margin: 0 0 12px;
++        font-size: 22px;
++      }
++
++      h3 {
++        margin: 22px 0 8px;
++        font-size: 17px;
++      }
++
++      p,
++      li {
++        font-size: 14px;
++        line-height: 1.7;
++      }
++
++      ul {
++        margin: 8px 0;
++        padding-left: 20px;
++      }
++
++      a {
++        color: var(--accent);
++        text-decoration: none;
++      }
++
++      a:hover {
++        text-decoration: underline;
++      }
++
++      .notice {
++        margin-top: 24px;
++        background: #f4f7fb;
++        border: 1px solid #dde6f5;
++        border-radius: 16px;
++        padding: 14px 16px;
++        color: #23314d;
++        font-size: 14px;
++        line-height: 1.6;
++      }
++
++      @media (max-width: 800px) {
++        .grid {
++          grid-template-columns: 1fr;
++        }
++      }
++    </style>
++  </head>
++  <body>
++    <div class="wrap">
++      <div class="card">
++        <h1>PriceCompare Privacy Policy / Gizlilik Politikasi</h1>
++        <p class="subtitle">Last updated / Son guncelleme: 29 March 2026</p>
++
++        <div class="grid">
++          <section class="panel">
++            <h2>English</h2>
++
++            <p>
++              This Privacy Policy explains what data may be processed when using the PriceCompare mobile
++              application and how that data may be used.
++            </p>
++
++            <h3>1. Data We May Process</h3>
++            <ul>
++              <li>Camera access and label photos captured by the user</li>
++              <li>Product name and price information detected by OCR</li>
++              <li>User preferences such as store currency, home currency, search country, and app language</li>
++              <li>Exchange rate data used to display currency conversion</li>
++            </ul>
++
++            <h3>2. Why This Data Is Used</h3>
++            <ul>
++              <li>To read product labels and compare prices</li>
++              <li>To restore user preferences when the app is reopened</li>
++              <li>To convert prices between selected currencies</li>
++              <li>To compare products against an official price list when available</li>
++              <li>To redirect the user to Google Shopping when an official price match is not found</li>
++            </ul>
++
++            <h3>3. Photos and OCR Data</h3>
++            <p>
++              Label photos may be processed to extract product names and prices. Depending on the app version,
++              this data may be processed locally on the device and may not be permanently stored.
++            </p>
++
++            <h3>4. Local Storage</h3>
++            <ul>
++              <li>Selected currencies</li>
++              <li>Selected search country</li>
++              <li>Selected app language</li>
++              <li>Last retrieved exchange rate data</li>
++              <li>Cached official price list data</li>
++            </ul>
++
++            <h3>5. Third-Party Services</h3>
++            <ul>
++              <li>Open exchange rate services</li>
++              <li>
++                Official price list source:
++                <a href="https://asotgames.com.tr/data/prices.json">asotgames.com.tr/data/prices.json</a>
++              </li>
++              <li>Google Shopping search</li>
++            </ul>
++
++            <h3>6. Ads and Purchases</h3>
++            <p>
++              If ads or premium purchase features are added in future versions, this Privacy Policy may be
++              updated accordingly.
++            </p>
++
++            <h3>7. Children’s Privacy</h3>
++            <p>
++              This app is not specifically directed to children. Children under 13 should use the app only
++              with parental or legal guardian supervision where required.
++            </p>
++
++            <h3>8. Security</h3>
++            <p>
++              Reasonable technical and organizational measures are intended to protect data. However, no
++              method of transmission or storage can be guaranteed to be fully secure.
++            </p>
++
++            <h3>9. Changes</h3>
++            <p>This Privacy Policy may be updated from time to time. The latest version will appear on this page.</p>
++
++            <h3>10. Contact</h3>
++            <p>
++              For privacy-related questions, please add your contact e-mail address to this section before
++              publishing.
++            </p>
++          </section>
++
++          <section class="panel">
++            <h2>Turkce</h2>
++
++            <p>
++              Bu Gizlilik Politikasi, PriceCompare mobil uygulamasi kullanilirken hangi verilerin islenebilecegini
++              ve bu verilerin nasil kullanilabilecegini aciklar.
++            </p>
++
++            <h3>1. Islenebilecek Veriler</h3>
++            <ul>
++              <li>Kamera erisimi ve kullanici tarafindan cekilen etiket fotograflari</li>
++              <li>OCR ile algilanan urun adi ve fiyat bilgileri</li>
++              <li>Kullanici tercihleri: magaza kuru, kendi ulke kuru, aranacak ulke ve uygulama dili</li>
++              <li>Kur donusumu gostermek icin kullanilan doviz verileri</li>
++            </ul>
++
++            <h3>2. Verilerin Kullanim Amaci</h3>
++            <ul>
++              <li>Urun etiketini okuyup fiyat karsilastirmasi yapmak</li>
++              <li>Uygulama tekrar acildiginda kullanici tercihlerini geri yuklemek</li>
++              <li>Secilen para birimleri arasinda donusum yapmak</li>
++              <li>Urunu, mevcutsa resmi fiyat listesiyle karsilastirmak</li>
++              <li>Resmi fiyat eslesmesi bulunamazsa kullaniciyi Google Shopping sonucuna yonlendirmek</li>
++            </ul>
++
++            <h3>3. Fotograf ve OCR Verileri</h3>
++            <p>
++              Etiket fotograflari urun adini ve fiyatini cikarmak icin islenebilir. Uygulama surumune bagli
++              olarak bu veriler cihaz icinde islenebilir ve kalici olarak saklanmayabilir.
++            </p>
++
++            <h3>4. Yerel Saklama</h3>
++            <ul>
++              <li>Secilen para birimleri</li>
++              <li>Secilen aranacak ulke</li>
++              <li>Secilen uygulama dili</li>
++              <li>Son alinan kur verileri</li>
++              <li>Cache’lenmis resmi fiyat listesi verisi</li>
++            </ul>
++
++            <h3>5. Ucuncu Taraf Servisler</h3>
++            <ul>
++              <li>Acik doviz kuru servisleri</li>
++              <li>
++                Resmi fiyat listesi kaynagi:
++                <a href="https://asotgames.com.tr/data/prices.json">asotgames.com.tr/data/prices.json</a>
++              </li>
++              <li>Google Shopping aramasi</li>
++            </ul>
++
++            <h3>6. Reklam ve Satin Almalar</h3>
++            <p>
++              Gelecekte reklam veya premium satin alma ozellikleri eklenirse, bu politika buna uygun bicimde
++              guncellenebilir.
++            </p>
++
++            <h3>7. Cocuklarin Gizliligi</h3>
++            <p>
++              Bu uygulama ozellikle cocuklara yonelik tasarlanmamistir. 13 yas alti kullanicilarin gerekli
++              durumlarda ebeveyn veya yasal vasi gozetiminde kullanmasi onerilir.
++            </p>
++
++            <h3>8. Guvenlik</h3>
++            <p>
++              Verileri korumak icin makul teknik ve organizasyonel onlemler alinmasi hedeflenir. Ancak hicbir
++              iletim veya saklama yontemi tamamen guvenli olarak garanti edilemez.
++            </p>
++
++            <h3>9. Degisiklikler</h3>
++            <p>Bu Gizlilik Politikasi zaman zaman guncellenebilir. Guncel surum bu sayfada yayinlanir.</p>
++
++            <h3>10. Iletisim</h3>
++            <p>
++              Gizlilik ile ilgili sorulariniz icin bu bolume yayinlamadan once kendi iletisim e-posta adresinizi
++              ekleyin.
++            </p>
++          </section>
++        </div>
++
++        <div class="notice">
++          Before publishing, update the contact section with your own e-mail address.
++          <br />
++          Yayinlamadan once iletisim bolumunu kendi e-posta adresinizle guncelleyin.
++        </div>
++      </div>
++    </div>
++  </body>
++</html>
