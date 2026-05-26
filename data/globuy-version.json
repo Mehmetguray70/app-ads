@@ -1,7 +1,7 @@
 {
   "ios": {
     "latestVersion": "2.1",
-    "latestBuild": 20,
+    "latestBuild": 21,
     "minimumVersion": "2.1",
     "minimumBuild": 20,
     "forceUpdate": true,
