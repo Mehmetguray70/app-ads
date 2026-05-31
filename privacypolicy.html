@@ -1,502 +1,273 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Globuy Privacy Policy / Gizlilik Politikasi</title>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globuy - Kişisel Verilerin Korunması Hakkında Aydınlatma Metni</title>
     <style>
-      :root {
-        color-scheme: light;
-        --bg: #0c0d10;
-        --panel: rgba(255, 255, 255, 0.08);
-        --card: #ffffff;
-        --text: #17181b;
-        --muted: #61656d;
-        --line: #e7e9ee;
-        --accent: #0b57d0;
-        --accent-soft: #eef4ff;
-        --shadow: 0 24px 70px rgba(0, 0, 0, 0.18);
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        background:
-          radial-gradient(circle at top left, rgba(55, 80, 180, 0.24), transparent 32%),
-          radial-gradient(circle at top right, rgba(255, 255, 255, 0.08), transparent 22%),
-          linear-gradient(180deg, #0c0d10 0%, #15171c 100%);
-        color: var(--text);
-      }
-
-      .wrap {
-        max-width: 1040px;
-        margin: 0 auto;
-        padding: 36px 16px 56px;
-      }
-
-      .hero {
-        color: #fff;
-        margin-bottom: 20px;
-      }
-
-      .eyebrow {
-        display: inline-block;
-        font-size: 12px;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        font-weight: 700;
-        color: rgba(255, 255, 255, 0.72);
-        margin-bottom: 10px;
-      }
-
-      h1 {
-        margin: 0;
-        font-size: 38px;
-        line-height: 1.08;
-        letter-spacing: -0.03em;
-      }
-
-      .subtitle {
-        margin: 12px 0 0;
-        color: rgba(255, 255, 255, 0.78);
-        font-size: 15px;
-        line-height: 1.6;
-        max-width: 760px;
-      }
-
-      .layout {
-        display: grid;
-        grid-template-columns: 1.45fr 1fr;
-        gap: 20px;
-        align-items: start;
-      }
-
-      .main-card,
-      .side-card {
-        background: var(--card);
-        border-radius: 28px;
-        box-shadow: var(--shadow);
-      }
-
-      .main-card {
-        padding: 28px;
-      }
-
-      .side-card {
-        padding: 22px;
-        position: sticky;
-        top: 20px;
-      }
-
-      .lang-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 18px;
-      }
-
-      .panel {
-        border: 1px solid var(--line);
-        border-radius: 22px;
-        padding: 22px;
-        background: #fff;
-      }
-
-      h2 {
-        margin: 0 0 6px;
-        font-size: 22px;
-        letter-spacing: -0.02em;
-      }
-
-      .lang-note {
-        margin: 0 0 18px;
-        color: var(--muted);
-        font-size: 13px;
-      }
-
-      h3 {
-        margin: 22px 0 8px;
-        font-size: 16px;
-      }
-
-      p,
-      li {
-        font-size: 14px;
-        line-height: 1.72;
-        color: var(--text);
-      }
-
-      ul {
-        margin: 8px 0;
-        padding-left: 20px;
-      }
-
-      a {
-        color: var(--accent);
-        text-decoration: none;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-
-      .section-note {
-        margin-top: 18px;
-        background: var(--accent-soft);
-        border: 1px solid #d9e6ff;
-        border-radius: 18px;
-        padding: 14px 16px;
-        color: #203356;
-        font-size: 14px;
-        line-height: 1.65;
-      }
-
-      .side-card h2 {
-        font-size: 24px;
-        margin-bottom: 12px;
-      }
-
-      .meta-block + .meta-block {
-        margin-top: 18px;
-        padding-top: 18px;
-        border-top: 1px solid var(--line);
-      }
-
-      .meta-title {
-        margin: 0 0 8px;
-        color: var(--muted);
-        font-size: 12px;
-        text-transform: uppercase;
-        letter-spacing: 0.12em;
-        font-weight: 700;
-      }
-
-      .contact-line {
-        margin: 0;
-        font-size: 15px;
-        line-height: 1.7;
-      }
-
-      .footer-note {
-        margin-top: 14px;
-        color: var(--muted);
-        font-size: 13px;
-        line-height: 1.6;
-      }
-
-      @media (max-width: 920px) {
-        .layout {
-          grid-template-columns: 1fr;
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #1a1a2e;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f7;
         }
-
-        .side-card {
-          position: static;
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
         }
-      }
-
-      @media (max-width: 760px) {
-        .lang-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .main-card,
-        .side-card {
-          border-radius: 22px;
-        }
-
-        .main-card {
-          padding: 18px;
-        }
-
-        .panel {
-          padding: 18px;
-        }
-
         h1 {
-          font-size: 30px;
+            color: #111111;
+            font-size: 28px;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 8px;
         }
-      }
+        .subtitle {
+            text-align: center;
+            color: #6b7280;
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+        h2 {
+            color: #111111;
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        p {
+            margin-bottom: 16px;
+            text-align: justify;
+        }
+        ul {
+            margin-bottom: 16px;
+            padding-left: 24px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            background: #fef3c7;
+            padding: 16px;
+            border-radius: 8px;
+            border-left: 4px solid #f59e0b;
+            margin: 24px 0;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e5e7eb;
+            text-align: center;
+            color: #9ca3af;
+            font-size: 13px;
+        }
+        a {
+            color: #4A90E2;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
-  </head>
-  <body>
-    <div class="wrap">
-      <header class="hero">
-        <div class="eyebrow">Globuy</div>
-        <h1>Privacy Policy / Gizlilik Politikasi</h1>
-        <p class="subtitle">
-          This page contains both the English and Turkish versions of the Globuy Privacy Policy.
-          Bu sayfa Globuy Gizlilik Politikasinin hem Ingilizce hem de Turkce surumunu icerir.
-        </p>
-      </header>
+</head>
+<body>
+    <div class="container">
+        <h1>Kişisel Verilerin Korunması Hakkında Aydınlatma Metni</h1>
+        <p class="subtitle">6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında</p>
 
-      <div class="layout">
-        <main class="main-card">
-          <div class="lang-grid">
-            <section class="panel">
-              <h2>English</h2>
-              <p class="lang-note">Last updated: 28 May 2026</p>
+        <p>Globuy uygulamasını sunan şirket (bundan böyle "Globuy" veya "Veri Sorumlusu" olarak anılacaktır), 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında veri sorumlusu olarak siz değerli kullanıcılarımızın kişisel verilerini kaydedecek, sınıflandıracak, işleyecek, saklayacak, güncelleyecek ve gerektiğinde üçüncü kişilere aktaracaktır. İşbu bilgilendirme ile, KVKK hükümleri gereğince karşılıklı hak ve yükümlülüklerimiz konusunda sizleri bilgilendiriyoruz.</p>
 
-              <p>
-                This Privacy Policy explains what information may be processed when using the Globuy
-                mobile application and how that information may be used.
-              </p>
+        <p>Tarafınıza ait kişisel bilgiler, başta kimlik bilgileri (ad, soyad, e-posta adresi vb.) olmak üzere, cihaz bilgileri, kullanım verileri, tarama geçmişi, tercihler ve sizin belirlenmenizi veya belirlenebilir olmanızı sağlayacak her türlü bilgiyi ifade etmektedir.</p>
 
-              <h3>1. Information We May Process</h3>
-              <ul>
-                <li>Camera access and label photos captured by the user</li>
-                <li>Product names and prices detected through OCR</li>
-                <li>User preferences such as store currency, home currency, search country and app language</li>
-                <li>Exchange rate data used for currency conversion</li>
-                <li>Anonymous app usage analytics, such as app opens, sessions, retention ranges and feature events</li>
-                <li>Basic technical information required for ads and purchase functionality, when enabled</li>
-              </ul>
+        <h2>1. Kişisel Verilerinizin Toplanma Yöntemi</h2>
+        <p>Kişisel verileriniz; Globuy mobil uygulaması, Firebase Authentication servisi, uygulama içi etkileşimler ve analitik araçlar kanalıyla toplanmaktadır. Veri toplama yöntemleri şunlardır:</p>
+        <ul>
+            <li><strong>Kimlik doğrulama:</strong> Google Sign-In, Apple Sign-In veya e-posta/şifre ile üyelik kaydı</li>
+            <li><strong>Uygulama kullanımı:</strong> Etiket tarama, fiyat karşılaştırma, kur dönüştürme işlemleri sırasında oluşturulan veriler</li>
+            <li><strong>Tercihler:</strong> Para birimi, dil, arama ülkesi gibi kullanıcı tercihleri</li>
+            <li><strong>Demografik bilgiler:</strong> İsteğe bağlı olarak paylaşılan yaş aralığı ve cinsiyet bilgisi</li>
+            <li><strong>Cihaz ve kullanım verileri:</strong> İşletim sistemi, uygulama sürümü, kullanım istatistikleri (Firebase Analytics aracılığıyla)</li>
+            <li><strong>İletişim:</strong> Destek talepleri veya geri bildirimler</li>
+        </ul>
 
-              <h3>2. Why This Information Is Used</h3>
-              <ul>
-                <li>To read product labels and compare prices</li>
-                <li>To restore user preferences when the app is reopened</li>
-                <li>To convert prices between selected currencies</li>
-                <li>To compare products against an official price list when available</li>
-                <li>To redirect users to Google Shopping when no official match is found</li>
-                <li>To understand anonymous usage trends and improve the app experience</li>
-              </ul>
+        <h2>2. Kişisel Verilerinizin İşlenme Amaçları ve Hukuki Sebepleri</h2>
+        <p>Kişisel verileriniz aşağıdaki amaçlarla işlenecektir:</p>
+        <ul>
+            <li><strong>Hizmet sunumu:</strong> Üyelik işlemleri, etiket tarama, fiyat karşılaştırma, kur dönüştürme ve sonuçların gösterilmesi</li>
+            <li><strong>Kişiselleştirme:</strong> Kullanıcı tercihlerine göre dil, para birimi ve arama ülkesi ayarlarının saklanması</li>
+            <li><strong>Geçmiş kayıtları:</strong> Tarama geçmişinin saklanması ve kullanıcıya sunulması</li>
+            <li><strong>Güvenlik:</strong> Hesap güvenliği, yetkisiz erişimlerin önlenmesi ve kullanıcı doğrulaması</li>
+            <li><strong>İstatistik ve analiz:</strong> Uygulama kullanım istatistikleri, performans izleme ve hizmet iyileştirme</li>
+            <li><strong>Yasal yükümlülükler:</strong> İlgili mevzuat uyarınca adli ve idari yetkili mercilerce öngörülen bilgi saklama, raporlama ve bilgilendirme yükümlülüklerine uyulması</li>
+            <li><strong>İletişim:</strong> Kullanıcı destek taleplerinin yanıtlanması</li>
+        </ul>
 
-              <h3>3. Photos and OCR Data</h3>
-              <p>
-                Label photos may be processed to extract product names and prices. Depending on the app
-                version, this processing may happen locally on the device and may not be permanently stored.
-              </p>
+        <div class="highlight">
+            <strong>Önemli Not:</strong> Kişisel verilerinizin işlenmesinin hukuki sebebi, şirketimizle yaptığınız veya yapacağınız sözleşmelerin kurulması veya ifasıyla doğrudan doğruya ilgisi olması kaydıyla, kişisel verilerinizin işlenmesinin gerekli olması ve sözleşmenin kurulması ve ifası dışındaki konularda sizin açık rızanızdır.
+        </div>
 
-              <h3>4. Local Storage</h3>
-              <ul>
-                <li>Selected currencies</li>
-                <li>Selected search country</li>
-                <li>Selected app language</li>
-                <li>Last retrieved exchange rate data</li>
-                <li>Cached official price list data</li>
-              </ul>
+        <h2>3. Kişisel Verilerinizin Aktarılması</h2>
+        <p>Kişisel verileriniz, hizmetin sunulabilmesi amacıyla aşağıdaki üçüncü taraflarla paylaşılabilecektir:</p>
+        <ul>
+            <li><strong>Firebase Authentication:</strong> Kullanıcı kimlik doğrulaması (Google, Apple, e-posta/şifre) için</li>
+            <li><strong>Firebase Analytics:</strong> Kullanım istatistikleri ve analitik veriler için</li>
+            <li><strong>Google ML Kit:</strong> OCR (metin tanıma) işlemleri için</li>
+            <li><strong>RevenueCat:</strong> Premium üyelik (Globuy Pro) satın alma ve abonelik yönetimi için</li>
+            <li><strong>Google Mobile Ads:</strong> Reklam gösterimi ve reklam gelirleri için (ücretsiz kullanıcılar için)</li>
+            <li><strong>Bulut servis sağlayıcıları:</strong> Veri saklama, yedekleme ve işleme hizmetleri için</li>
+            <li><strong>Resmi merciler:</strong> Yasal zorunluluk halinde adli ve idari otoritelere</li>
+        </ul>
+        <p>Resmi mercilerin talebi veya mevzuat gereğince bilgi verme zorunluluğu olan hallerde bilgileriniz yasal merci ve kurumlara aktarılabilecek olup, bunlar da bilgilerinizi ayrıca paylaşabilir.</p>
 
-              <h3>5. Third-Party Services</h3>
-              <ul>
-                <li>Open exchange rate services</li>
-                <li>
-                  Official price list source:
-                  <a href="https://asotgames.com.tr/data/prices.json">asotgames.com.tr/data/prices.json</a>
-                </li>
-                <li>Google Shopping search</li>
-                <li>Google Firebase and Google Analytics for Firebase for anonymous app usage analytics</li>
-                <li>Google AdMob for advertising, if enabled in the app</li>
-                <li>Google Play Billing for premium purchases or subscriptions, if enabled in the app</li>
-              </ul>
+        <h2>4. Kişisel Verilerinizin Saklanması ve Güvenliği</h2>
+        <p>Kişisel veriler, bu bilgileri verme amacı geçerli olduğu sürece saklanacaktır. Faaliyet konumuzla ilgili ihtiyaçlarınızın belirlenmesi, size daha çabuk hizmet verilmesi amacıyla, verileriniz bizden aldığınız hizmetin süresinin dolmasından sonra da tarafımızdan işlenmeye devam edilecektir.</p>
+        <p>Veriler, yasal sürelere tabi olarak ve yasal merciler ve diğer ilgili kamu otoritelerine raporlama, bilgilendirme amaçları için tutulması gerekiyorsa bu sınırlara uyulacaktır.</p>
+        <p>Saklanan, kaydedilen verilerin kaybolmaması, yetkisiz kişilerin eline geçmemesi ve hukuka aykırı kullanımların önlenmesi için gerekli güvenlik önlemleri tarafımızdan alınacaktır. Bu kapsamda:</p>
+        <ul>
+            <li>Firebase Authentication ile güvenli kimlik doğrulama</li>
+            <li>Veri şifreleme ve güvenli iletişim protokolleri (HTTPS/TLS)</li>
+            <li>Erişim kontrolü ve yetkilendirme mekanizmaları</li>
+            <li>Düzenli güvenlik güncellemeleri ve denetimler</li>
+        </ul>
 
-              <h3>6. Firebase Analytics</h3>
-              <p>
-                The app may use Google Firebase and Google Analytics for Firebase to measure anonymous app
-                usage. This may include events such as app opens, session activity, retention ranges and
-                price-check feature usage. Globuy does not use Firebase Analytics to collect directly
-                identifying information such as name, e-mail address, phone number, precise location or payment
-                information. Analytics data is used to understand aggregate usage patterns and improve the app.
-              </p>
-              <p>
-                You can learn more about Firebase privacy practices at
-                <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>
-                and Google's Privacy Policy at
-                <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.
-              </p>
+        <h2>5. Kanun Kapsamındaki Haklarınız</h2>
+        <p>KVKK'nın 11. maddesi gereğince; şirketimize başvurmak suretiyle kişisel verilerinizin;</p>
+        <ul>
+            <li>İşlenip işlenmediğini öğrenme,</li>
+            <li>İşlenmişse buna ilişkin bilgi talep etme,</li>
+            <li>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme,</li>
+            <li>Yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme,</li>
+            <li>Eksik veya yanlış işlenmiş olması halinde bunların düzeltilmesini isteme,</li>
+            <li>KVKK'nın 7. maddesinde öngörülen şartlar çerçevesinde kişisel verilerin silinmesini veya yok edilmesini isteme,</li>
+            <li>Aktarıldığı üçüncü kişilere yukarıda belirtilen düzeltilme, silinme veya yok edilme kapsamında yapılan işlemlerin bildirilmesini isteme,</li>
+            <li>Münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme,</li>
+            <li>KVKK'ya aykırı olarak işlenmesi sebebiyle zarara uğramanız halinde zararın giderilmesini talep etme</li>
+        </ul>
+        <p>haklarına sahipsiniz.</p>
 
-              <h3>7. Advertising and Purchases</h3>
-              <p>
-                The app may display advertising through Google AdMob and may offer premium purchases through
-                Google Play Billing. Google may process certain device and app identifiers as required for ad
-                delivery, fraud prevention, purchase validation, and billing operations. Please review Google's
-                own privacy terms for more information.
-              </p>
+        <div class="highlight">
+            <strong>Haklarınızı nasıl kullanabilirsiniz?</strong><br>
+            Kanun kapsamındaki haklarınızı şirketimize e-posta veya uygulama içi destek talebi yoluyla iletebilirsiniz. Talebiniz en kısa sürede ve en geç 30 gün içinde sonuçlandırılacaktır.
+        </div>
 
-              <h3>8. Children’s Privacy</h3>
-              <p>
-                This app is not specifically directed to children. Children under 13 should use the app only
-                with parental or legal guardian supervision where required.
-              </p>
+        <h2>6. Veri Sorumlusu İletişim Bilgileri</h2>
+        <p>Kişisel verilerinizle ilgili sorularınız ve KVKK kapsamındaki haklarınızı kullanmak için aşağıdaki iletişim kanallarından bize ulaşabilirsiniz:</p>
+        <ul>
+            <li><strong>E-posta:</strong> privacy@globuy.com</li>
+            <li><strong>Uygulama içi destek:</strong> Ayarlar > Destek</li>
+        </ul>
 
-              <h3>9. Security</h3>
-              <p>
-                Reasonable technical and organizational safeguards are intended to protect information.
-                However, no internet transmission or electronic storage method can be guaranteed to be fully secure.
-              </p>
+        <h2>7. Aydınlatma Metninde Değişiklik</h2>
+        <p>Globuy, işbu Aydınlatma Metni'ni yürürlükteki mevzuata uygun olarak değiştirebilir. Değişiklikler, uygulama içinde veya web sitesinde yayınlandığı tarihte yürürlüğe girer. Kullanıcıların, Aydınlatma Metni'ni periyodik olarak kontrol etmeleri önerilir.</p>
 
-              <h3>10. Changes</h3>
-              <p>
-                This Privacy Policy may be updated from time to time. The latest version will always be published
-                on this page.
-              </p>
+        <div class="footer">
+            <p><strong>Globuy</strong> - Akıllı Fiyat Tarayıcı<br>
+            Gezginler için geliştirildi</p>
+            <p>Gizlilik ve veri koruma soruları için: privacy@globuy.com</p>
+        </div>
 
-              <h3>11. Contact</h3>
-              <p>
-                For privacy-related questions, you may contact:
-              </p>
-              <ul>
-                <li>E-mail: <a href="mailto:mehmetguray.yucesan@gmail.com">mehmetguray.yucesan@gmail.com</a></li>
-                <li>Phone: <a href="tel:+905396606680">+90 539 660 6680</a></li>
-              </ul>
-            </section>
 
-            <section class="panel">
-              <h2>Turkce</h2>
-              <p class="lang-note">Son guncelleme: 28 Mayis 2026</p>
+        <hr style="margin: 60px 0; border: none; border-top: 2px solid #e5e7eb;">
 
-              <p>
-                Bu Gizlilik Politikasi, Globuy mobil uygulamasi kullanilirken hangi bilgilerin
-                islenebilecegini ve bu bilgilerin nasil kullanilabilecegini aciklar.
-              </p>
+        <h1>Privacy Notice Regarding the Protection of Personal Data</h1>
+        <p class="subtitle">Pursuant to the Turkish Personal Data Protection Law No. 6698 (KVKK)</p>
 
-              <h3>1. Islenebilecek Bilgiler</h3>
-              <ul>
-                <li>Kamera erisimi ve kullanici tarafindan cekilen etiket fotograflari</li>
-                <li>OCR ile algilanan urun adlari ve fiyat bilgileri</li>
-                <li>Kullanici tercihleri: magaza kuru, kendi ulke kuru, aranacak ulke ve uygulama dili</li>
-                <li>Kur donusumu icin kullanilan doviz verileri</li>
-                <li>Uygulama acilislari, oturumlar, geri donus araliklari ve ozellik olaylari gibi anonim kullanim analitigi</li>
-                <li>Reklam ve satin alma ozellikleri aktifse gerekli temel teknik bilgiler</li>
-              </ul>
+        <p>The company providing the Globuy application (hereinafter referred to as "Globuy" or the "Data Controller") will record, classify, process, store, update, and, where necessary, transfer your personal data to third parties within the scope of the Turkish Personal Data Protection Law No. 6698 ("KVKK"). Through this notice, we inform you about our mutual rights and obligations under the applicable legislation.</p>
 
-              <h3>2. Bu Bilgilerin Kullanim Amaci</h3>
-              <ul>
-                <li>Urun etiketini okuyup fiyat karsilastirmasi yapmak</li>
-                <li>Uygulama tekrar acildiginda kullanici tercihlerini geri yuklemek</li>
-                <li>Secilen para birimleri arasinda donusum yapmak</li>
-                <li>Urunu, mevcutsa resmi fiyat listesiyle karsilastirmak</li>
-                <li>Resmi eslesme yoksa kullaniciyi Google Shopping sonucuna yonlendirmek</li>
-                <li>Anonim kullanim egilimlerini anlamak ve uygulama deneyimini iyilestirmek</li>
-              </ul>
+        <p>Your personal information includes, but is not limited to, identity information such as name, surname and email address, device information, usage data, browsing history, preferences, and any other information that may identify you or make you identifiable.</p>
 
-              <h3>3. Fotograf ve OCR Verileri</h3>
-              <p>
-                Etiket fotograflari urun adini ve fiyatini cikarmak icin islenebilir. Uygulama surumune bagli
-                olarak bu islem cihaz icinde yapilabilir ve kalici olarak saklanmayabilir.
-              </p>
+        <h2>1. Method of Collecting Personal Data</h2>
+        <p>Your personal data is collected through the Globuy mobile application, Firebase Authentication services, in-app interactions, and analytics tools. The data collection methods are as follows:</p>
+        <ul>
+            <li><strong>Authentication:</strong> Registration through Google Sign-In, Apple Sign-In, or email/password authentication</li>
+            <li><strong>Application usage:</strong> Data generated during label scanning, price comparison, and currency conversion activities</li>
+            <li><strong>Preferences:</strong> User preferences such as currency, language, and search country</li>
+            <li><strong>Demographic information:</strong> Optional age range and gender information shared by the user</li>
+            <li><strong>Device and usage data:</strong> Operating system, application version, and usage statistics collected through Firebase Analytics</li>
+            <li><strong>Communication:</strong> Support requests or feedback submitted by users</li>
+        </ul>
 
-              <h3>4. Yerel Saklama</h3>
-              <ul>
-                <li>Secilen para birimleri</li>
-                <li>Secilen aranacak ulke</li>
-                <li>Secilen uygulama dili</li>
-                <li>Son alinan kur verileri</li>
-                <li>Cache'lenmis resmi fiyat listesi verisi</li>
-              </ul>
+        <h2>2. Purposes and Legal Grounds for Processing Personal Data</h2>
+        <p>Your personal data will be processed for the following purposes:</p>
+        <ul>
+            <li><strong>Service delivery:</strong> Membership processes, label scanning, price comparison, currency conversion, and displaying results</li>
+            <li><strong>Personalization:</strong> Storing language, currency, and search country settings according to user preferences</li>
+            <li><strong>History records:</strong> Storing and displaying scan history to the user</li>
+            <li><strong>Security:</strong> Account security, prevention of unauthorized access, and user authentication</li>
+            <li><strong>Statistics and analytics:</strong> Application usage statistics, performance monitoring, and service improvement</li>
+            <li><strong>Legal obligations:</strong> Compliance with storage, reporting, and notification obligations required by judicial and administrative authorities under applicable laws</li>
+            <li><strong>Communication:</strong> Responding to user support requests</li>
+        </ul>
 
-              <h3>5. Ucuncu Taraf Servisler</h3>
-              <ul>
-                <li>Acik doviz kuru servisleri</li>
-                <li>
-                  Resmi fiyat listesi kaynagi:
-                  <a href="https://asotgames.com.tr/data/prices.json">asotgames.com.tr/data/prices.json</a>
-                </li>
-                <li>Google Shopping aramasi</li>
-                <li>Anonim uygulama kullanim analitigi icin Google Firebase ve Google Analytics for Firebase</li>
-                <li>Uygulamada etkinlestirilmesi halinde Google AdMob reklam servisi</li>
-                <li>Uygulamada etkinlestirilmesi halinde Google Play Billing premium satin alma sistemi</li>
-              </ul>
+        <div class="highlight">
+            <strong>Important Notice:</strong> The legal basis for processing your personal data is the necessity of processing data directly related to the establishment or performance of contracts made or to be made with our company. For processing activities outside the establishment and performance of a contract, your explicit consent may be requested.
+        </div>
 
-              <h3>6. Firebase Analytics</h3>
-              <p>
-                Uygulama, anonim uygulama kullanimini olcmek icin Google Firebase ve Google Analytics for
-                Firebase kullanabilir. Bu kapsamda uygulama acilislari, oturum hareketleri, geri donus
-                araliklari ve fiyat kontrolu ozelligi kullanimi gibi olaylar olculebilir. Globuy, Firebase
-                Analytics'i ad, e-posta adresi, telefon numarasi, kesin konum veya odeme bilgisi gibi dogrudan
-                kimlik belirleyici bilgileri toplamak icin kullanmaz. Analitik veriler toplu kullanim
-                egilimlerini anlamak ve uygulamayi iyilestirmek icin kullanilir.
-              </p>
-              <p>
-                Firebase gizlilik uygulamalari hakkinda daha fazla bilgi icin
-                <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>
-                ve Google Gizlilik Politikasi icin
-                <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>
-                sayfalarini inceleyebilirsiniz.
-              </p>
+        <h2>3. Transfer of Personal Data</h2>
+        <p>Your personal data may be shared with the following third parties for the purpose of providing the service:</p>
+        <ul>
+            <li><strong>Firebase Authentication:</strong> For user authentication through Google, Apple, or email/password</li>
+            <li><strong>Firebase Analytics:</strong> For usage statistics and analytics data</li>
+            <li><strong>Google ML Kit:</strong> For OCR (text recognition) processing</li>
+            <li><strong>RevenueCat:</strong> For premium membership (Globuy Pro) purchases and subscription management</li>
+            <li><strong>Google Mobile Ads:</strong> For advertising and advertising revenue for free users</li>
+            <li><strong>Cloud service providers:</strong> For data storage, backup, and processing services</li>
+            <li><strong>Official authorities:</strong> For judicial and administrative authorities where legally required</li>
+        </ul>
+        <p>Where official authorities request information or where there is a legal obligation to provide information, your data may be transferred to the relevant legal authorities and institutions, which may also share your information in accordance with applicable laws.</p>
 
-              <h3>7. Reklam ve Satin Almalar</h3>
-              <p>
-                Uygulama Google AdMob uzerinden reklam gosterebilir ve Google Play Billing uzerinden premium
-                satin alma veya abonelik sunabilir. Bu durumda reklam sunumu, dolandiriciligin onlenmesi,
-                satin alma dogrulamasi ve faturalama islemleri icin Google tarafinda belirli cihaz ve uygulama
-                tanimlayicilari islenebilir. Ayrintilar icin Google'in kendi gizlilik kosullarini inceleyin.
-              </p>
+        <h2>4. Retention and Security of Personal Data</h2>
+        <p>Personal data will be stored for as long as the purpose for which it was provided remains valid. For the purpose of identifying your needs related to our services and providing faster service, your data may continue to be processed after the service period has expired.</p>
+        <p>Where data must be retained for legal reporting or notification purposes to legal authorities and other relevant public institutions, the applicable legal retention periods will be observed.</p>
+        <p>Necessary security measures will be taken to prevent stored and recorded data from being lost, accessed by unauthorized persons, or used unlawfully. These measures include:</p>
+        <ul>
+            <li>Secure authentication through Firebase Authentication</li>
+            <li>Data encryption and secure communication protocols (HTTPS/TLS)</li>
+            <li>Access control and authorization mechanisms</li>
+            <li>Regular security updates and reviews</li>
+        </ul>
 
-              <h3>8. Cocuklarin Gizliligi</h3>
-              <p>
-                Bu uygulama ozellikle cocuklara yonelik tasarlanmamistir. 13 yas alti kullanicilarin gerekli
-                durumlarda ebeveyn veya yasal vasi gozetiminde kullanmasi onerilir.
-              </p>
+        <h2>5. Your Rights Under the Law</h2>
+        <p>Pursuant to Article 11 of the KVKK, by applying to our company, you have the right to:</p>
+        <ul>
+            <li>Learn whether your personal data has been processed,</li>
+            <li>Request information if your personal data has been processed,</li>
+            <li>Learn the purpose of processing and whether the data is used in accordance with that purpose,</li>
+            <li>Know the third parties to whom your personal data is transferred domestically or abroad,</li>
+            <li>Request correction if your personal data has been processed incompletely or inaccurately,</li>
+            <li>Request deletion or destruction of personal data under the conditions set forth in Article 7 of the KVKK,</li>
+            <li>Request notification of correction, deletion, or destruction operations to third parties to whom the data has been transferred,</li>
+            <li>Object to the occurrence of a result against you through analysis exclusively by automated systems,</li>
+            <li>Request compensation if you suffer damage due to unlawful processing of your personal data.</li>
+        </ul>
 
-              <h3>9. Guvenlik</h3>
-              <p>
-                Bilgileri korumak icin makul teknik ve organizasyonel onlemler alinmasi hedeflenir. Ancak hicbir
-                internet iletimi veya elektronik saklama yontemi tamamen guvenli olarak garanti edilemez.
-              </p>
+        <div class="highlight">
+            <strong>How can you exercise your rights?</strong><br>
+            You may submit your requests under the law to our company via email or through an in-app support request. Your request will be concluded as soon as possible and within 30 days at the latest.
+        </div>
 
-              <h3>10. Degisiklikler</h3>
-              <p>
-                Bu Gizlilik Politikasi zaman zaman guncellenebilir. Guncel surum her zaman bu sayfada yayinlanir.
-              </p>
+        <h2>6. Data Controller Contact Information</h2>
+        <p>You may contact us through the following channels for questions regarding your personal data and to exercise your rights under the KVKK:</p>
+        <ul>
+            <li><strong>Email:</strong> privacy@globuy.com</li>
+            <li><strong>In-app support:</strong> Settings &gt; Support</li>
+        </ul>
 
-              <h3>11. Iletisim</h3>
-              <p>Gizlilik ile ilgili sorulariniz icin asagidaki bilgiler uzerinden iletisim kurabilirsiniz:</p>
-              <ul>
-                <li>E-posta: <a href="mailto:mehmetguray.yucesan@gmail.com">mehmetguray.yucesan@gmail.com</a></li>
-                <li>Telefon: <a href="tel:+905396606680">+90 539 660 6680</a></li>
-              </ul>
-            </section>
-          </div>
+        <h2>7. Changes to This Privacy Notice</h2>
+        <p>Globuy may amend this Privacy Notice in accordance with applicable legislation. Changes will become effective on the date they are published in the application or on the website. Users are advised to review this Privacy Notice periodically.</p>
 
-          <div class="section-note">
-            Google Firebase, Google Analytics for Firebase, Google AdMob ve Google Play Billing ile ilgili veri
-            isleme detaylari, uygulamanin yayinlanan surumunde bu ozellikler etkinlestirildiginde daha da
-            guncellenebilir.
-            <br />
-            Data processing details related to Google Firebase, Google Analytics for Firebase, Google AdMob and
-            Google Play Billing may be updated further when these features are enabled in the published version
-            of the app.
-          </div>
-        </main>
-
-        <aside class="side-card">
-          <h2>Quick Overview</h2>
-
-          <div class="meta-block">
-            <p class="meta-title">Application</p>
-            <p class="contact-line"><strong>Globuy</strong></p>
-          </div>
-
-          <div class="meta-block">
-            <p class="meta-title">Main Functions</p>
-            <p class="contact-line">OCR label reading, currency conversion, official price comparison, Google Shopping fallback</p>
-          </div>
-
-          <div class="meta-block">
-            <p class="meta-title">Contact</p>
-            <p class="contact-line">
-              <a href="mailto:mehmetguray.yucesan@gmail.com">mehmetguray.yucesan@gmail.com</a>
-            </p>
-            <p class="contact-line">
-              <a href="tel:+905396606680">+90 539 660 6680</a>
-            </p>
-          </div>
-
-          <div class="meta-block">
-            <p class="meta-title">Official Price Source</p>
-            <p class="contact-line">
-              <a href="https://asotgames.com.tr/data/prices.json">asotgames.com.tr/data/prices.json</a>
-            </p>
-          </div>
-
-          <p class="footer-note">
-            This page is designed to be shared publicly as a single privacy policy URL for app store submissions.
-          </p>
-        </aside>
-      </div>
+        <div class="footer">
+            <p><strong>Globuy</strong> - Smart Price Scanner<br>
+            Built for Travelers</p>
+            <p>For privacy and data protection questions: mehmetguray.yucesan@gmail.com</p>
+        </div>
     </div>
-  </body>
+</body>
 </html>
