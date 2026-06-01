@@ -1,210 +1,524 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ASOT Company | Future-ready Technology Studio</title>
-  <meta name="description" content="ASOT Company; mobil ürünler, yapay zeka destekli deneyimler ve ölçeklenebilir dijital platformlar geliştiren futuristik teknoloji firmasıdır. Globuy by ASOT Company." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASOT Company | Globuy - Akıllı Alışveriş Asistanı</title>
+    <meta name="description" content="ASOT Company - Globuy ile alışverişte fiyatları anında karşılaştırın, para birimlerini dönüştürün. Fütüristik teknoloji ile güçlendirilmiş akıllı alışveriş deneyimi.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
-  <div class="aurora auroraOne" aria-hidden="true"></div>
-  <div class="aurora auroraTwo" aria-hidden="true"></div>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="grid-overlay"></div>
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
 
-  <header class="siteHeader">
-    <a class="brand" href="#top" aria-label="ASOT Company home">
-      <span class="brandMark">A</span>
-      <span class="brandText">
-        <strong>ASOT</strong>
-        <small>Company</small>
-      </span>
-    </a>
-
-    <nav class="navLinks" aria-label="Primary navigation">
-      <a href="#company">Company</a>
-      <a href="#globuy">Globuy</a>
-      <a href="#stack">Technology</a>
-      <a href="#legal">Legal</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <span class="logo-letter">A</span>
+                </div>
+                <div class="logo-text">
+                    <span class="company-name">ASOT</span>
+                    <span class="company-subtitle">COMPANY</span>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Ana Sayfa</a>
+                <a href="#globuy" class="nav-link">Globuy</a>
+                <a href="#games" class="nav-link">Oyunlar</a>
+                <a href="#about" class="nav-link">Hakkımızda</a>
+                <a href="#legal" class="nav-link">Yasal</a>
+            </div>
+            <a href="mailto:hello@asotgames.com.tr" class="cta-button">İletişim</a>
+        </div>
     </nav>
 
-    <a class="headerCta" href="mailto:hello@asotgames.com.tr">Start a Signal</a>
-  </header>
-
-  <main id="top">
-    <section class="hero sectionShell">
-      <div class="heroCopy reveal">
-        <p class="eyebrow"><span></span> Future-ready technology company</p>
-        <h1>We build intelligent products for the next commercial frontier.</h1>
-        <p class="heroLead">
-          ASOT Company; mobil uygulamalar, yapay zeka destekli alışveriş deneyimleri ve yüksek hızlı dijital servisler tasarlayan bağımsız bir teknoloji firmasıdır.
-        </p>
-        <div class="heroActions">
-          <a class="btn primary" href="#globuy">Explore Globuy</a>
-          <a class="btn secondary" href="#company">See the Company</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>Fütüristik Teknoloji Şirketi</span>
+                </div>
+                <h1 class="hero-title">
+                    Geleceğin Alışveriş<br>
+                    <span class="gradient-text">Deneyimini</span> Bugün Yaşayın
+                </h1>
+                <p class="hero-description">
+                    ASOT Company olarak, yapay zeka destekli mobil uygulamalar ve oyunlar geliştiriyoruz. 
+                    Globuy ile alışverişte fiyat karşılaştırma ve para birimi dönüştürme işlemlerini 
+                    saniyeler içinde gerçekleştirin.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#globuy" class="btn btn-primary">
+                        <span>Globuy'u Keşfet</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#about" class="btn btn-secondary">Hakkımızda</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">10K+</div>
+                        <div class="stat-label">Aktif Kullanıcı</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">50K+</div>
+                        <div class="stat-label">Fiyat Taraması</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">4.8★</div>
+                        <div class="stat-label">Kullanıcı Puanı</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-frame">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <div class="scan-interface">
+                                <div class="scan-header">
+                                    <span class="scan-status">● Tarama Aktif</span>
+                                </div>
+                                <div class="scan-area">
+                                    <div class="scan-corners">
+                                        <span class="corner tl"></span>
+                                        <span class="corner tr"></span>
+                                        <span class="corner bl"></span>
+                                        <span class="corner br"></span>
+                                    </div>
+                                    <div class="scan-line"></div>
+                                </div>
+                                <div class="price-card">
+                                    <div class="price-detected">Fiyat Tespit Edildi</div>
+                                    <div class="price-amount">€24.99</div>
+                                    <div class="price-converted">≈ ₺850.00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div class="commandDeck reveal delayOne" aria-label="ASOT Company system preview">
-        <div class="deckHeader">
-          <span class="traffic red"></span>
-          <span class="traffic amber"></span>
-          <span class="traffic green"></span>
-          <strong>ASOT//PRODUCT_OS</strong>
-        </div>
-        <div class="orbital">
-          <div class="orbit orbitOne"></div>
-          <div class="orbit orbitTwo"></div>
-          <div class="core">ASOT</div>
-          <span class="node nodeA">AI</span>
-          <span class="node nodeB">OCR</span>
-          <span class="node nodeC">MOBILE</span>
-          <span class="node nodeD">CLOUD</span>
-        </div>
-        <div class="telemetry">
-          <div><span>Active product</span><strong>Globuy</strong></div>
-          <div><span>Focus</span><strong>Commerce intelligence</strong></div>
-          <div><span>Mode</span><strong>Prototype to scale</strong></div>
-        </div>
-      </div>
     </section>
 
-    <section id="company" class="sectionShell splitSection">
-      <div class="sectionIntro reveal">
-        <p class="kicker">ASOT Company</p>
-        <h2>From idea spark to shipped product.</h2>
-      </div>
-      <div class="copyBlock reveal delayOne">
-        <p>
-          Yeni nesil tüketici uygulamaları için tasarım, mühendislik ve ürün stratejisini tek akışta birleştiriyoruz. Hedefimiz sade: gerçek kullanıcı problemlerini hızlı, güvenilir ve güzel çalışan yazılımlarla çözmek.
-        </p>
-      </div>
-    </section>
+    <!-- Globuy Section -->
+    <section id="globuy" class="globuy-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Flagship Ürün</div>
+                <h2 class="section-title">Globuy - Akıllı Alışveriş Asistanı</h2>
+                <p class="section-description">
+                    Yapay zeka destekli OCR teknolojisi ile raf etiketlerini tarayın, 
+                    fiyatları anında karşılaştırın ve para birimlerini dönüştürün.
+                </p>
+            </div>
 
-    <section class="metrics sectionShell" aria-label="Company metrics">
-      <article class="metricCard reveal">
-        <span>01</span>
-        <strong>Mobile-first</strong>
-        <p>iOS ve Android için hızlı, sezgisel ve mağaza standartlarına hazır ürünler.</p>
-      </article>
-      <article class="metricCard reveal delayOne">
-        <span>02</span>
-        <strong>AI-assisted</strong>
-        <p>OCR, fiyat analizi, akıllı öneriler ve veri destekli karar mekanikleri.</p>
-      </article>
-      <article class="metricCard reveal delayTwo">
-        <span>03</span>
-        <strong>Cloud-native</strong>
-        <p>Firebase, güvenli kimlik, analitik ve ölçeklenebilir servis mimarileri.</p>
-      </article>
-    </section>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 4L4 10L16 16L28 10L16 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4 22L16 28L28 22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4 16L16 22L28 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">OCR Teknolojisi</h3>
+                    <p class="feature-description">
+                        Gelişmiş optik karakter tanıma ile etiketleri saniyeler içinde okuyun ve dijitalleştirin.
+                    </p>
+                </div>
 
-    <section id="globuy" class="sectionShell productSection">
-      <div class="productPanel reveal">
-        <div class="productBadge">Flagship product</div>
-        <h2>Globuy</h2>
-        <p>
-          Globuy, raf etiketlerini saniyeler içinde okuyup fiyatları dönüştürmeye ve karşılaştırmaya yardımcı olan akıllı alışveriş asistanıdır. Seyahat edenler, farklı para birimleriyle alışveriş yapanlar ve hızlı karar vermek isteyen kullanıcılar için tasarlandı.
-        </p>
-        <div class="productActions">
-          <a class="btn primary" href="privacy-policy.html">Globuy Privacy Policy</a>
-          <a class="btn secondary" href="terms-of-use.html">Globuy Terms of Use</a>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 8V16L20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Anlık Dönüşüm</h3>
+                    <p class="feature-description">
+                        Gerçek zamanlı kur bilgileri ile fiyatları anında tercih ettiğiniz para birimine çevirin.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M28 16C28 22.6274 22.6274 28 16 28C9.37258 28 4 22.6274 4 16C4 9.37258 9.37258 4 16 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M28 8L16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Fiyat Karşılaştırma</h3>
+                    <p class="feature-description">
+                        Online fiyatlarla karşılaştırın ve en iyi alışveriş kararını verin.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="6" y="6" width="20" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M6 12H26" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 6V12" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Tarama Geçmişi</h3>
+                    <p class="feature-description">
+                        Tüm taramalarınızı kaydedin ve istediğiniz zaman tekrar inceleyin.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 4V28M4 16H28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="16" cy="16" r="8" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Çoklu Para Birimi</h3>
+                    <p class="feature-description">
+                        50+ para birimi desteği ile dünya çapında alışveriş yapın.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 4L20 12L28 14L22 20L24 28L16 24L8 28L10 20L4 14L12 12L16 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Premium Özellikler</h3>
+                    <p class="feature-description">
+                        Reklamsız deneyim ve sınırsız tarama ile Globuy Pro'yu deneyin.
+                    </p>
+                </div>
+            </div>
+
+            <div class="app-download">
+                <h3>Globuy'u Hemen İndirin</h3>
+                <div class="download-buttons">
+                    <a href="#" class="store-button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
+                        </svg>
+                        <div>
+                            <div class="store-text">Download on the</div>
+                            <div class="store-name">App Store</div>
+                        </div>
+                    </a>
+                    <a href="#" class="store-button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                        </svg>
+                        <div>
+                            <div class="store-text">GET IT ON</div>
+                            <div class="store-name">Google Play</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div class="phoneFrame reveal delayOne" aria-label="Globuy app concept preview">
-        <div class="phoneTop"></div>
-        <div class="scanView">
-          <span class="scanLine"></span>
-          <div class="labelCard">
-            <small>Detected shelf label</small>
-            <strong>EUR 12.49</strong>
-            <em>TRY estimate ready</em>
-          </div>
+    <!-- Games Section -->
+    <section id="games" class="games-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Oyun Portföyümüz</div>
+                <h2 class="section-title">Geliştirdiğimiz Oyunlar</h2>
+                <p class="section-description">
+                    ASOT Company olarak mobil oyun geliştirme alanında da faaliyet gösteriyoruz. 
+                    Kullanıcı deneyimini ön planda tutan, eğlenceli ve bağımlılık yaratmayan oyunlar üretiyoruz.
+                </p>
+            </div>
+
+            <div class="games-grid">
+                <div class="game-card">
+                    <div class="game-icon">🎮</div>
+                    <h3 class="game-title">Casual Games</h3>
+                    <p class="game-description">
+                        Günlük hayatın stresinden uzaklaşmanızı sağlayan, kolay öğrenilebilir casual oyunlar.
+                    </p>
+                    <div class="game-status">Geliştirme Aşamasında</div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-icon">🧩</div>
+                    <h3 class="game-title">Puzzle Games</h3>
+                    <p class="game-description">
+                        Zeka ve strateji gerektiren, beyninizi çalıştıran puzzle oyunları.
+                    </p>
+                    <div class="game-status">Planlama Aşamasında</div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-icon">🏆</div>
+                    <h3 class="game-title">Competitive Games</h3>
+                    <p class="game-description">
+                        Diğer oyuncularla yarışabileceğiniz, rekabetçi multiplayer oyunlar.
+                    </p>
+                    <div class="game-status">Konsept Aşamasında</div>
+                </div>
+            </div>
         </div>
-        <div class="phoneBottom">
-          <div><span>OCR</span><strong>Live</strong></div>
-          <div><span>Currency</span><strong>Smart</strong></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-badge">ASOT Company</div>
+                    <h2 class="section-title">Teknoloji ile Geleceği Şekillendiriyoruz</h2>
+                    <p class="about-description">
+                        ASOT Company, yapay zeka destekli mobil uygulamalar ve oyunlar geliştiren 
+                        yenilikçi bir teknoloji şirketidir. Kullanıcı deneyimini merkeze alarak, 
+                        günlük hayatı kolaylaştıran ve eğlenceli hale getiren ürünler yaratıyoruz.
+                    </p>
+                    <div class="about-values">
+                        <div class="value-item">
+                            <div class="value-icon">🚀</div>
+                            <div>
+                                <h4>İnovasyon</h4>
+                                <p>En son teknolojileri kullanarak yenilikçi çözümler üretiyoruz.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">🎯</div>
+                            <div>
+                                <h4>Kullanıcı Odaklı</h4>
+                                <p>Her ürünümüzü kullanıcı ihtiyaçlarını göz önünde bulundurarak tasarlıyoruz.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">🔒</div>
+                            <div>
+                                <h4>Güvenlik</h4>
+                                <p>Kullanıcı verilerinin güvenliğini en üst düzeyde tutuyoruz.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="tech-stack">
+                        <div class="tech-item">
+                            <span class="tech-label">AI/ML</span>
+                            <div class="tech-bar" style="--progress: 90%"></div>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-label">Mobile Dev</span>
+                            <div class="tech-bar" style="--progress: 95%"></div>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-label">Cloud</span>
+                            <div class="tech-bar" style="--progress: 85%"></div>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-label">OCR</span>
+                            <div class="tech-bar" style="--progress: 88%"></div>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-label">UI/UX</span>
+                            <div class="tech-bar" style="--progress: 92%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section id="stack" class="sectionShell stackSection">
-      <div class="sectionIntro centered reveal">
-        <p class="kicker">Technology Stack</p>
-        <h2>Product systems with a pulse.</h2>
-        <p>
-          Kullanıcının gördüğü arayüzden arka plandaki veri akışına kadar, ürünlerimizi modüler ve ölçülebilir şekilde inşa ediyoruz.
-        </p>
-      </div>
+    <!-- Legal Section -->
+    <section id="legal" class="legal-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Yasal Bilgiler</div>
+                <h2 class="section-title">Gizlilik ve Kullanım Şartları</h2>
+                <p class="section-description">
+                    Globuy kullanıcılarının gizliliğini ve güvenliğini ciddiye alıyoruz. 
+                    Tüm yasal belgelerimize aşağıdan ulaşabilirsiniz.
+                </p>
+            </div>
 
-      <div class="stackGrid">
-        <article class="stackCard reveal">
-          <span class="stackIcon">/01</span>
-          <h3>Computer Vision</h3>
-          <p>Etiket okuma, görüntüden veri çıkarma ve alışveriş bağlamını anlama.</p>
-        </article>
-        <article class="stackCard reveal delayOne">
-          <span class="stackIcon">/02</span>
-          <h3>Realtime Commerce</h3>
-          <p>Kur dönüşümü, fiyat karşılaştırma ve karar destek katmanları.</p>
-        </article>
-        <article class="stackCard reveal delayTwo">
-          <span class="stackIcon">/03</span>
-          <h3>Secure Identity</h3>
-          <p>Gizlilik odaklı oturum, premium üyelik ve güvenli kullanıcı verisi yönetimi.</p>
-        </article>
-        <article class="stackCard reveal delayThree">
-          <span class="stackIcon">/04</span>
-          <h3>Launch Systems</h3>
-          <p>Test, ölçümleme, mağaza uyumluluğu ve hızlı iterasyon döngüleri.</p>
-        </article>
-      </div>
-    </section>
+            <div class="legal-cards">
+                <div class="legal-card">
+                    <div class="legal-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 8V16M32 8V16M8 20H40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Kullanım Şartları</h3>
+                    <p>Globuy uygulamasını kullanırken uymanız gereken kurallar ve şartlar.</p>
+                    <a href="terms-of-use.html" class="legal-link">
+                        Kullanım Şartlarını Oku
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
 
-    <section class="sectionShell manifesto">
-      <div class="manifestoText reveal">
-        <p class="kicker">Operating Principle</p>
-        <h2>Make the future feel usable.</h2>
-        <p>
-          Teknoloji yalnızca etkileyici görünmemeli; elde tutulduğunda net, hızlı ve güven veren bir şeye dönüşmeli. ASOT Company olarak karmaşık sistemleri insanların günlük hayatına sade bir deneyim olarak indiriyoruz.
-        </p>
-      </div>
-      <div class="signalGrid reveal delayOne" aria-hidden="true">
-        <span></span><span></span><span></span><span></span><span></span><span></span>
-        <span></span><span></span><span></span><span></span><span></span><span></span>
-      </div>
-    </section>
+                <div class="legal-card">
+                    <div class="legal-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 4L8 12V22C8 31 15 39 24 44C33 39 40 31 40 22V12L24 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M20 24L22 26L28 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Gizlilik Politikası</h3>
+                    <p>Kişisel verilerinizin nasıl toplandığı, kullanıldığı ve korunduğu hakkında bilgi.</p>
+                    <a href="privacy-policy.html" class="legal-link">
+                        Gizlilik Politikasını Oku
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
 
-    <section id="legal" class="sectionShell legalSection">
-      <div class="legalCard reveal">
-        <p class="kicker">Globuy Legal Center</p>
-        <h2>Privacy and terms, linked clearly.</h2>
-        <p>Globuy ürününe ait gizlilik politikası ve kullanım şartları bu site içinde erişilebilir durumdadır.</p>
-        <div class="legalLinks">
-          <a href="privacy-policy.html">Privacy Policy</a>
-          <a href="terms-of-use.html">Terms of Use</a>
+            <div class="kvkk-notice">
+                <div class="kvkk-icon">ℹ️</div>
+                <div class="kvkk-content">
+                    <h4>KVKK Uyumluluğu</h4>
+                    <p>
+                        ASOT Company olarak, 6698 sayılı Kişisel Verilerin Korunması Kanunu'na tam uyum sağlıyoruz. 
+                        Kullanıcılarımızın kişisel verilerini en üst düzeyde koruma altına alıyoruz.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="contactCard reveal delayOne">
-        <span>Contact channel</span>
-        <a href="mailto:hello@asotgames.com.tr">hello@asotgames.com.tr</a>
-        <a href="tel:+905396606680">+90 539 660 66 80</a>
-      </div>
     </section>
-  </main>
 
-  <footer class="footer">
-    <span>© <span id="year"></span> ASOT Company</span>
-    <span>Globuy is an ASOT Company product.</span>
-  </footer>
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Bizimle İletişime Geçin</h2>
+                <p>Sorularınız, önerileriniz veya iş birliği teklifleriniz için bize ulaşın.</p>
+                <div class="contact-info">
+                    <a href="mailto:hello@asotgames.com.tr" class="contact-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M3 7L12 13L21 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        hello@asotgames.com.tr
+                    </a>
+                    <a href="tel:+905396606680" class="contact-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M22 16.92V19.92C22 20.52 21.5 21.03 20.9 21.03C9.4 20.48 2 13.08 2 3.03C2 2.43 2.5 1.92 3.1 1.92H6.1C6.7 1.92 7.2 2.42 7.2 3.02C7.2 4.52 7.5 5.97 8 7.32C8.1 7.62 8.1 7.93 7.9 8.13L6.3 9.73C7.9 13.03 10.9 16.03 14.2 17.63L15.8 16.03C16 15.83 16.3 15.73 16.6 15.83C17.9 16.33 19.4 16.63 20.9 16.63C21.5 16.92 22 17.32 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        +90 539 660 66 80
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <span class="logo-letter">A</span>
+                        </div>
+                        <div class="logo-text">
+                            <span class="company-name">ASOT</span>
+                            <span class="company-subtitle">COMPANY</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Yapay zeka destekli mobil uygulamalar ve oyunlar geliştiren fütüristik teknoloji şirketi.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Ürünler</h4>
+                        <a href="#globuy">Globuy</a>
+                        <a href="#games">Oyunlar</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Şirket</h4>
+                        <a href="#about">Hakkımızda</a>
+                        <a href="#contact">İletişim</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Yasal</h4>
+                        <a href="terms-of-use.html">Kullanım Şartları</a>
+                        <a href="privacy-policy.html">Gizlilik Politikası</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> ASOT Company. Tüm hakları saklıdır.</p>
+                <p>Globuy, ASOT Company'nin tescilli markasıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Active nav link
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(5, 8, 20, 0.95)';
+                navbar.style.backdropFilter = 'blur(20px)';
+            } else {
+                navbar.style.background = 'rgba(5, 8, 20, 0.7)';
+                navbar.style.backdropFilter = 'blur(10px)';
+            }
+        });
+    </script>
 </body>
 </html>
