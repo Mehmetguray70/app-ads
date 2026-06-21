@@ -1,1 +1,9 @@
 
+{
+  "latestVersion": "1.1",
+  "latestBuild": 5,
+  "minimumVersion": "1.1",
+  "minimumBuild": 5,
+  "forceUpdate": true,
+  "playStoreUrl": "https://play.google.com/store/apps/details?id=com.asotgames.wizard"
+}
