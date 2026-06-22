@@ -1,5 +1,5 @@
 {
-  "weekId": "2026-W26",
+  "weekId": "2026-W27",
   "reward": 1000000,
   "missions": [
     {"id":"m01","title":"Haftalık Isınma","description":"3 bölüm tamamla","type":"complete_levels","target":3,"active":0},
