@@ -4,7 +4,7 @@
     "latestBuild": 56,
     "minimumVersion": "2.6",
     "minimumBuild": 56,
-    "forceUpdate": false,
+    "forceUpdate": true,
     "appStoreUrl": "https://apps.apple.com/tr/app/globuy/id6763753565?l=tr"
   }
 }
