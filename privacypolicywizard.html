@@ -125,7 +125,7 @@
     <header>
       <h1>Privacy Policy</h1>
       <p class="meta">Rune Arena Wizard Survivor</p>
-      <p class="meta">Last updated: 24 June 2026</p>
+      <p class="meta">Last updated: 10 July 2026</p>
       <nav class="language-links" aria-label="Language navigation">
         <a href="#tr">Türkçe</a>
         <a href="#en">English</a>
@@ -135,199 +135,266 @@
     <section id="tr" lang="tr">
       <h2>Gizlilik Politikası ve KVKK Aydınlatma Metni</h2>
       <p>
-        Bu Gizlilik Politikası, Rune Arena Wizard Survivor adlı mobil oyunun
-        gizlilik ve kişisel veri işleme yaklaşımını açıklar. Oyunumuz, kullanıcıdan
-        üyelik, ad, soyad, e-posta adresi veya telefon numarası gibi doğrudan
-        kimlik bilgileri istemeden oynanabilecek şekilde tasarlanmıştır.
+        Bu Gizlilik Politikası, Rune Arena Wizard Survivor mobil oyununda hangi
+        verilerin hangi amaçlarla işlendiğini açıklar. Oyun, temel oynanış için
+        cihaz üzerinde kayıt tutar; Google girişi, bulut yedekleme, dereceli PVP,
+        leaderboard, can senkronizasyonu ve ödüllü reklam gibi çevrimiçi özellikler
+        kullanıldığında bazı veriler çevrimiçi servislerle işlenebilir.
       </p>
 
       <p class="note">
-        Özetle: Oyunun temel oynanışı çevrimdışı çalışır. Zorunlu hesap kaydı yoktur.
-        Oyun ilerlemesi ve ayarlar büyük ölçüde cihaz üzerinde saklanır. İnternet
-        bağlantısı yalnızca isteğe bağlı çevrimiçi özellikler, reklamlar ve teknik
-        servisler için kullanılabilir.
+        Özetle: Oyunun temel ilerlemesi cihazda tutulur. Google hesabıyla giriş
+        yapıldığında ilerleme, oyunun düşük maliyetli bulut yedekleme modeliyle
+        Firestore'a yedeklenebilir. Normal oynanış sırasında her küçük değişiklik
+        anında buluta yazılmaz; oyuncu uygulamayı silmeden önceki son oturumu
+        tekrar açmadan kaldırırsa, o son oturumun cloud yedeği eksik kalabilir.
       </p>
 
-      <h3>1. Toplanan veya İşlenen Veriler</h3>
+      <h3>1. Veri Sorumlusu ve İletişim</h3>
       <p>
-        Oyunun temel oynanışı için doğrudan kişisel kimlik bilgisi toplamıyoruz.
-        Aşağıdaki veriler, oyunun çalışması veya isteğe bağlı özelliklerin sunulması
-        amacıyla işlenebilir:
-      </p>
-      <ul>
-        <li>Cihazda saklanan oyun ilerlemesi, seviye durumu, yıldızlar, skorlar, can bilgisi, seçili karakter ve silah tercihleri.</li>
-        <li>Ses, müzik ve oyun içi tercih ayarları.</li>
-        <li>Leaderboard veya benzeri çevrimiçi özellikler kullanılırsa oyuncu adı, skor, seviye ilerlemesi ve anonim kullanıcı kimliği.</li>
-        <li>Firebase Authentication kullanılması halinde arka planda oluşturulan anonim kullanıcı kimliği.</li>
-        <li>Google Mobile Ads gibi reklam servisleri tarafından işlenebilecek cihaz/reklam tanımlayıcıları ve reklam etkileşim verileri.</li>
-        <li>Uygulama sürümü ve teknik hata/performans bilgileri gibi servislerin çalışmasına yardımcı olabilecek teknik veriler.</li>
-      </ul>
-
-      <h3>2. Verilerin İşlenme Amaçları</h3>
-      <ul>
-        <li>Oyunun çalışmasını, ilerleme kaydını ve ayarların korunmasını sağlamak.</li>
-        <li>Çevrimdışı oynanabilirliği desteklemek.</li>
-        <li>Leaderboard gibi isteğe bağlı çevrimiçi özellikleri sunmak.</li>
-        <li>Reklam gösterimi ve ödüllü reklam gibi isteğe bağlı reklam özelliklerini sağlamak.</li>
-        <li>Hata ayıklama, güvenlik, kötüye kullanımın önlenmesi ve servis sürekliliğini sağlamak.</li>
-        <li>Yasal yükümlülüklerin gerekli kıldığı durumlarda yetkili mercilerin taleplerini karşılamak.</li>
-      </ul>
-
-      <h3>3. Hukuki Sebep</h3>
-      <p>
-        Kişisel veri niteliği taşıyabilecek veriler; oyunun sunulması ve kullanıcı
-        deneyiminin sağlanması için sözleşmenin kurulması veya ifası, meşru menfaat,
-        açık rıza gerektiren hallerde açık rıza ve yasal yükümlülükler kapsamında
-        işlenebilir.
+        Rune Arena Wizard Survivor geliştiricisi, bu politikada açıklanan veri
+        işleme faaliyetleri için iletişim noktasıdır. Gizlilik ve veri koruma
+        soruları için bizimle şu adresten iletişime geçebilirsiniz:
+        <a href="mailto:mehmetguray.yucesan@gmail.com">mehmetguray.yucesan@gmail.com</a>
       </p>
 
-      <h3>4. Üçüncü Taraf Servisler</h3>
-      <p>
-        Oyunda bazı özellikler üçüncü taraf servislerle çalışabilir. Bu servisler
-        kendi gizlilik politikalarına göre veri işleyebilir:
-      </p>
+      <h3>2. İşlenen Veriler</h3>
+      <p>Oyunun özelliklerine göre aşağıdaki veri kategorileri işlenebilir:</p>
       <ul>
-        <li>Firebase Authentication: Anonim kimlik doğrulama ve çevrimiçi servis erişimi.</li>
-        <li>Firebase Firestore: Leaderboard, can senkronizasyonu veya çevrimiçi oyun verileri gibi desteklenen özellikler.</li>
-        <li>Google Mobile Ads / AdMob: Reklam gösterimi ve ödüllü reklam özellikleri.</li>
-        <li>Apple App Store ve Google Play: Uygulama dağıtımı, indirme, satın alma veya mağaza kaynaklı işlemler.</li>
+        <li>Cihazda saklanan oyun ilerlemesi, açılan seviyeler, yıldızlar, en iyi skorlar, elmas/soul stone bakiyesi, yetenek seviyeleri, seçili ve açılmış silahlar, seçili ve açılmış karakter kozmetikleri, dil ve ses tercihleri.</li>
+        <li>Google Sign-In kullanıldığında Firebase kullanıcı kimliği, e-posta adresi, Google görünen adı ve oyunda seçilen nickname. Profil fotoğrafı URL'si oyun veritabanında saklanmaz.</li>
+        <li>Bulut yedekleme için Firestore'da tutulan seviye ilerlemesi, skorlar, yıldızlar, elmas/soul stone bakiyesi, yetenekler, silahlar, kozmetikler, nickname, dil tercihi ve güncelleme zamanı.</li>
+        <li>Can sistemi için can sayısı, maksimum can, son can değişim zamanı ve güncelleme zamanı.</li>
+        <li>Leaderboard için oyuncu kimliği, görünen ad/nickname, toplam skor ve ulaşılan seviye.</li>
+        <li>Dereceli PVP için rank seviyesi, lig adı, division, maç sayısı, galibiyet/mağlubiyet/beraberlik, seri bilgileri, en iyi rank, son maç sonuçları ve ödül elmas bilgileri.</li>
+        <li>Online PVP matchmaking ve oda yönetimi için Firebase Realtime Database üzerinde kullanıcı kimliği, oyuncu adı, yük dizilimi/loadout özeti, rank bilgisi, oda durumu, hazır olma bilgisi ve teknik zaman damgaları.</li>
+        <li>Ödüllü reklamlar için Google Mobile Ads / AdMob tarafından işlenebilecek reklam tanımlayıcıları, cihaz bilgileri, reklam gösterimi ve reklam etkileşim verileri.</li>
+        <li>Haftalık görevler ve zorunlu güncelleme kontrolü için asotgames.com.tr üzerinden alınan uzaktan yapılandırma verileri. Bu isteklerde sunucu tarafından standart teknik erişim kayıtları oluşabilir.</li>
+        <li>Uygulama sürümü, cihaz/işletim sistemi bilgisi, bağlantı durumu, hata ayıklama ve güvenlik için gerekli teknik veriler.</li>
       </ul>
       <p>
-        Üçüncü taraf servislerin veri işleme faaliyetleri ilgili servis sağlayıcıların
-        kendi gizlilik politikalarına tabidir.
+        Oyun; kamera, mikrofon, rehber, kesin konum, sağlık verisi veya cihazdaki
+        kişisel dosyalara erişim istemez.
       </p>
 
-      <h3>5. Verilerin Saklanması</h3>
+      <h3>3. Verilerin İşlenme Amaçları</h3>
+      <ul>
+        <li>Oyunun çalışmasını, ilerleme kaydını ve cihazlar arası geri yüklemeyi sağlamak.</li>
+        <li>Google hesabıyla giriş, nickname ve profil akışını yönetmek.</li>
+        <li>Leaderboard, dereceli PVP, online PVP, eşleşme ve oda yönetimi özelliklerini sunmak.</li>
+        <li>Can sistemi, ödüller, elmas/soul stone bakiyesi, silah/kıyafet/yetenek açılımları gibi oyun ekonomisi özelliklerini yürütmek.</li>
+        <li>Ödüllü reklam göstermek ve reklam ödüllerini vermek.</li>
+        <li>Haftalık görevler, uzaktan içerik ve zorunlu güncelleme kontrollerini sağlamak.</li>
+        <li>Güvenlik, kötüye kullanımın önlenmesi, hata giderme, servis sürekliliği ve yasal yükümlülükleri yerine getirmek.</li>
+      </ul>
+
+      <h3>4. Hukuki Sebep</h3>
       <p>
-        Cihaz üzerinde tutulan oyun verileri, kullanıcı uygulamayı silene veya cihaz
-        verilerini temizleyene kadar saklanabilir. Çevrimiçi özellikler için işlenen
-        veriler, ilgili özelliğin sunulması, güvenlik, hata giderme ve yasal
-        yükümlülükler için gerekli süre boyunca saklanabilir.
+        Kişisel veri niteliği taşıyabilecek veriler; oyunun ve isteğe bağlı
+        çevrimiçi servislerin sunulması için sözleşmenin kurulması veya ifası,
+        meşru menfaat, açık rıza gerektiren durumlarda açık rıza ve yasal
+        yükümlülükler kapsamında işlenebilir.
       </p>
 
-      <h3>6. Çocukların Gizliliği</h3>
+      <h3>5. Üçüncü Taraf Servisler</h3>
       <p>
-        Oyunumuz genel kitleye yönelik bir eğlence oyunudur ve çocuklardan bilerek
-        doğrudan kimlik bilgisi toplamayı amaçlamaz. Bir ebeveyn veya yasal temsilci,
+        Oyunda kullanılan bazı özellikler üçüncü taraf servislerle çalışır. Bu
+        servisler kendi gizlilik politikalarına göre veri işleyebilir:
+      </p>
+      <ul>
+        <li>Google Sign-In ve Firebase Authentication: Google hesabıyla giriş ve kullanıcı kimliği doğrulama.</li>
+        <li>Firebase Cloud Firestore: profil, bulut ilerleme yedeği, can sistemi, leaderboard ve dereceli PVP verileri.</li>
+        <li>Firebase Realtime Database: online PVP matchmaking, oda/lobi, sinyalleşme ve geçici eşleşme verileri.</li>
+        <li>Google Mobile Ads / AdMob: reklam gösterimi, ödüllü reklamlar, reklam ölçümü ve kötüye kullanım önleme.</li>
+        <li>Google Play ve Apple App Store: uygulama dağıtımı, indirme, mağaza işlemleri ve platform güvenliği.</li>
+        <li>asotgames.com.tr: haftalık görev yapılandırması ve uygulama sürüm/güncelleme bilgileri.</li>
+      </ul>
+      <p>
+        İlgili servis sağlayıcıların politikaları için
+        <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>,
+        <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase Privacy and Security</a>
+        ve
+        <a href="https://support.google.com/admob/answer/6128543" rel="noopener">Google AdMob policy information</a>
+        sayfalarını inceleyebilirsiniz.
+      </p>
+
+      <h3>6. Verilerin Saklanması ve Silinmesi</h3>
+      <p>
+        Cihazda tutulan veriler, kullanıcı uygulamayı silene veya cihaz verilerini
+        temizleyene kadar saklanabilir. Google hesabıyla ilişkili bulut verileri,
+        ilgili özellikleri sunmak, güvenlik sağlamak, hata gidermek veya yasal
+        yükümlülükleri yerine getirmek için gerekli süre boyunca saklanabilir.
+        Kullanıcı, hesabına bağlı oyun verilerinin silinmesini talep etmek için
+        iletişim adresinden bize ulaşabilir.
+      </p>
+
+      <h3>7. Veri Güvenliği</h3>
+      <p>
+        Firestore ve Realtime Database erişimleri güvenlik kurallarıyla sınırlandırılır.
+        Kullanıcılar kendi profil, ilerleme, can ve dereceli verilerine erişebilir;
+        PVP ve leaderboard gibi özelliklerde ise özelliğin çalışması için gerekli
+        sınırlı veriler diğer kullanıcılar tarafından görülebilir. Hiçbir internet
+        tabanlı sistemin mutlak güvenlik sağlayamayacağını unutmamak gerekir.
+      </p>
+
+      <h3>8. Uluslararası Aktarım</h3>
+      <p>
+        Firebase, Google Mobile Ads, Google Play ve Apple App Store gibi servisler
+        verileri Türkiye dışındaki sunucularda işleyebilir. Bu durumda veri aktarımı,
+        ilgili servis sağlayıcıların güvenlik ve gizlilik önlemleri ile geçerli
+        mevzuat kapsamında gerçekleşir.
+      </p>
+
+      <h3>9. Çocukların Gizliliği</h3>
+      <p>
+        Oyun genel kitleye yönelik bir eğlence oyunudur ve çocuklardan bilerek
+        doğrudan kimlik bilgisi toplamayı amaçlamaz. Ebeveyn veya yasal temsilci,
         çocuğuna ait kişisel verilerin işlendiğini düşünüyorsa bizimle iletişime
         geçebilir.
       </p>
 
-      <h3>7. Haklarınız</h3>
+      <h3>10. Haklarınız</h3>
       <p>
-        6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamındaki haklarınız
-        çerçevesinde; kişisel verilerinizin işlenip işlenmediğini öğrenme, işlenmişse
-        bilgi talep etme, düzeltilmesini veya silinmesini isteme ve ilgili mevzuatta
-        belirtilen diğer hakları kullanma hakkına sahipsiniz.
+        6698 sayılı Kişisel Verilerin Korunması Kanunu ve uygulanabilir diğer
+        mevzuat kapsamındaki haklarınız çerçevesinde; kişisel verilerinizin
+        işlenip işlenmediğini öğrenme, işlenmişse bilgi talep etme, düzeltilmesini
+        veya silinmesini isteme, itiraz etme ve ilgili mevzuatta belirtilen diğer
+        hakları kullanma hakkına sahipsiniz.
       </p>
 
-      <h3>8. İletişim</h3>
+      <h3>11. Değişiklikler</h3>
       <p>
-        Gizlilik ve veri koruma soruları için bizimle iletişime geçebilirsiniz:
-        <a href="mailto:mehmetguray.yucesan@gmail.com">mehmetguray.yucesan@gmail.com</a>
-      </p>
-
-      <h3>9. Değişiklikler</h3>
-      <p>
-        Bu Gizlilik Politikası zaman zaman güncellenebilir. Güncel metin, yayınlandığı
-        tarihten itibaren geçerli olur.
+        Bu Gizlilik Politikası zaman zaman güncellenebilir. Güncel metin,
+        yayınlandığı tarihten itibaren geçerli olur.
       </p>
     </section>
 
     <section id="en" lang="en">
       <h2>Privacy Policy</h2>
       <p>
-        This Privacy Policy explains how Rune Arena Wizard Survivor handles privacy
-        and personal data. The game is designed to be playable without requiring
-        an account, name, surname, email address, phone number, or other direct
-        identity information from the player.
+        This Privacy Policy explains what data may be processed in Rune Arena
+        Wizard Survivor and for what purposes. The game stores core gameplay data
+        on the device. When the player uses online features such as Google Sign-In,
+        cloud backup, ranked PVP, leaderboard, lives synchronization, or rewarded
+        ads, some data may be processed by online services.
       </p>
 
       <p class="note">
-        In short: the core gameplay works offline. Account registration is not
-        required. Game progress and settings are mostly stored on the device.
-        Internet access may only be used for optional online features, ads, and
-        technical services.
+        In short: core progress is stored locally on the device. After Google
+        Sign-In, progress may be backed up to Firestore using a low-cost cloud
+        save model. The game does not upload every small progress change during
+        normal play. If the player deletes the app before opening it again after
+        a play session, the latest session may not be included in the cloud backup.
       </p>
 
-      <h3>1. Data We May Process</h3>
+      <h3>1. Controller and Contact</h3>
       <p>
-        We do not collect direct identity information for the core gameplay.
-        The following data may be processed to operate the game or provide optional
-        features:
+        The developer of Rune Arena Wizard Survivor is the contact point for the
+        data processing described in this policy. For privacy and data protection
+        questions, please contact:
+        <a href="mailto:mehmetguray.yucesan@gmail.com">mehmetguray.yucesan@gmail.com</a>
       </p>
+
+      <h3>2. Data We May Process</h3>
+      <p>Depending on the features used, the following categories of data may be processed:</p>
       <ul>
-        <li>Locally stored game progress, level status, stars, scores, lives, selected character, and selected weapon preferences.</li>
-        <li>Audio, music, and in-game preference settings.</li>
-        <li>If leaderboard or similar online features are used: player name, score, level progress, and anonymous user ID.</li>
-        <li>An anonymous user ID created in the background when Firebase Authentication is used.</li>
-        <li>Device or advertising identifiers and ad interaction data that may be processed by ad services such as Google Mobile Ads.</li>
-        <li>Technical data such as app version, error, or performance information that may help keep services working properly.</li>
+        <li>Locally stored game progress, unlocked levels, stars, best scores, gem/soul stone balance, upgrade levels, selected and unlocked weapons, selected and unlocked character cosmetics, language, audio, and preference settings.</li>
+        <li>When Google Sign-In is used: Firebase user ID, email address, Google display name, and the nickname chosen in the game. Profile photo URL is not stored in the game database.</li>
+        <li>For cloud backup in Firestore: level progress, scores, stars, gem/soul stone balance, upgrades, weapons, cosmetics, nickname, language preference, and update time.</li>
+        <li>For the lives system: current lives, maximum lives, last life change time, and update time.</li>
+        <li>For leaderboard: player ID, display name/nickname, total score, and highest reached level.</li>
+        <li>For ranked PVP: rank level, tier, division, match count, wins, losses, draws, streaks, best rank, recent results, and reward gem information.</li>
+        <li>For online PVP matchmaking and room management in Firebase Realtime Database: user ID, player name, loadout summary, rank information, room status, ready state, and technical timestamps.</li>
+        <li>For rewarded ads: advertising identifiers, device information, ad impression data, and ad interaction data that may be processed by Google Mobile Ads / AdMob.</li>
+        <li>Remote configuration data loaded from asotgames.com.tr for weekly missions and mandatory update checks. Standard technical access logs may be created by the hosting server for those requests.</li>
+        <li>Technical data needed for app version checks, device/operating system compatibility, connectivity, debugging, security, and service continuity.</li>
+      </ul>
+      <p>
+        The game does not request access to camera, microphone, contacts, precise
+        location, health data, or personal files on the device.
+      </p>
+
+      <h3>3. Purposes of Processing</h3>
+      <ul>
+        <li>To operate the game, save progress, and restore progress across installations.</li>
+        <li>To manage Google Sign-In, nickname, and profile flows.</li>
+        <li>To provide leaderboard, ranked PVP, online PVP, matchmaking, and room management features.</li>
+        <li>To operate the lives system, rewards, gem/soul stone balance, weapon, cosmetic, and upgrade unlocks.</li>
+        <li>To show rewarded ads and grant ad rewards.</li>
+        <li>To provide weekly missions, remote content, and mandatory update checks.</li>
+        <li>To maintain security, prevent abuse, debug issues, ensure service continuity, and comply with legal obligations.</li>
       </ul>
 
-      <h3>2. Purposes of Processing</h3>
-      <ul>
-        <li>To operate the game, save progress, and preserve settings.</li>
-        <li>To support offline play.</li>
-        <li>To provide optional online features such as leaderboard.</li>
-        <li>To provide optional ad features such as rewarded ads.</li>
-        <li>To debug issues, maintain security, prevent abuse, and ensure service continuity.</li>
-        <li>To comply with lawful requests or legal obligations where required.</li>
-      </ul>
-
-      <h3>3. Legal Basis</h3>
+      <h3>4. Legal Basis</h3>
       <p>
-        Data that may qualify as personal data may be processed based on performance
-        of a service requested by the user, legitimate interests, explicit consent
-        where required, and compliance with legal obligations.
+        Data that may qualify as personal data may be processed based on the
+        performance of a service requested by the user, legitimate interests,
+        explicit consent where required, and compliance with legal obligations.
       </p>
 
-      <h3>4. Third-Party Services</h3>
+      <h3>5. Third-Party Services</h3>
       <p>
-        Some features may rely on third-party services. These services may process
+        Some game features rely on third-party services. These services may process
         data under their own privacy policies:
       </p>
       <ul>
-        <li>Firebase Authentication: Anonymous authentication and access to online services.</li>
-        <li>Firebase Firestore: Supported online features such as leaderboard, lives synchronization, or online game data.</li>
-        <li>Google Mobile Ads / AdMob: Ad serving and rewarded ads.</li>
-        <li>Apple App Store and Google Play: App distribution, downloads, purchases, or store-related operations.</li>
+        <li>Google Sign-In and Firebase Authentication: Google account sign-in and user authentication.</li>
+        <li>Firebase Cloud Firestore: profile, cloud progress backup, lives, leaderboard, and ranked PVP data.</li>
+        <li>Firebase Realtime Database: online PVP matchmaking, lobby/room, signaling, and temporary match data.</li>
+        <li>Google Mobile Ads / AdMob: ad serving, rewarded ads, ad measurement, and abuse prevention.</li>
+        <li>Google Play and Apple App Store: app distribution, downloads, store operations, and platform security.</li>
+        <li>asotgames.com.tr: weekly mission configuration and app version/update information.</li>
       </ul>
       <p>
-        The data processing activities of third-party services are governed by the
-        privacy policies of the relevant providers.
+        You can review the relevant service provider policies at
+        <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>,
+        <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase Privacy and Security</a>,
+        and
+        <a href="https://support.google.com/admob/answer/6128543" rel="noopener">Google AdMob policy information</a>.
       </p>
 
-      <h3>5. Data Retention</h3>
+      <h3>6. Retention and Deletion</h3>
       <p>
-        Game data stored on the device may remain until the user deletes the app
-        or clears the device data. Data processed for online features may be retained
-        for as long as necessary to provide the feature, maintain security, resolve
-        issues, or comply with legal obligations.
+        Data stored on the device may remain until the user deletes the app or
+        clears app data. Cloud data linked to a Google account may be retained for
+        as long as needed to provide the relevant features, maintain security,
+        resolve issues, or comply with legal obligations. A user may contact us
+        to request deletion of game data linked to their account.
       </p>
 
-      <h3>6. Children’s Privacy</h3>
+      <h3>7. Data Security</h3>
+      <p>
+        Firestore and Realtime Database access is limited by security rules.
+        Users can access their own profile, progress, lives, and ranked data;
+        for PVP and leaderboard features, limited data needed for the feature may
+        be visible to other users. No internet-based system can be guaranteed to
+        be completely secure.
+      </p>
+
+      <h3>8. International Transfers</h3>
+      <p>
+        Services such as Firebase, Google Mobile Ads, Google Play, and Apple App
+        Store may process data on servers outside the user's country. Such transfers
+        are handled under the relevant provider's security and privacy safeguards
+        and applicable law.
+      </p>
+
+      <h3>9. Children's Privacy</h3>
       <p>
         The game is a general entertainment game and does not intentionally request
         direct identity information from children. If a parent or legal guardian
-        believes that personal data of a child has been processed, they may contact us.
+        believes that a child's personal data has been processed, they may contact us.
       </p>
 
-      <h3>7. Your Rights</h3>
+      <h3>10. Your Rights</h3>
       <p>
-        Depending on the applicable law, you may have the right to request information
+        Depending on applicable law, you may have the right to request information
         about personal data processed about you, request correction or deletion,
         object to certain processing activities, and exercise other rights provided
         by applicable data protection laws.
       </p>
 
-      <h3>8. Contact</h3>
-      <p>
-        For privacy and data protection questions, please contact:
-        <a href="mailto:mehmetguray.yucesan@gmail.com">mehmetguray.yucesan@gmail.com</a>
-      </p>
-
-      <h3>9. Changes</h3>
+      <h3>11. Changes</h3>
       <p>
         This Privacy Policy may be updated from time to time. The updated version
         becomes effective when published.
