@@ -1,9 +1,9 @@
 {
   "ios": {
-    "latestVersion": "2.7",
-    "latestBuild": 61,
-    "minimumVersion": "2.7",
-    "minimumBuild": 61,
+    "latestVersion": "2.8",
+    "latestBuild": 72,
+    "minimumVersion": "2.8",
+    "minimumBuild": 72,
     "forceUpdate": true,
     "appStoreUrl": "https://apps.apple.com/tr/app/globuy/id6763753565?l=tr"
   }
