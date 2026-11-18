@@ -23,6 +23,13 @@
     }
   </script>
   <style>
+    @font-face {
+      font-family: "Footballix Card";
+      src: url("assets/footballix-card-type.ttf") format("truetype");
+      font-weight: 800;
+      font-display: swap;
+    }
+
     :root {
       color-scheme: dark;
       --background: #111411;
@@ -213,73 +220,90 @@
     .hero-content .action { margin-top: 28px; }
     .arrow { font-size: 1.14em; line-height: 1; }
 
-    .card-fan {
-      position: relative;
+    .footballix-showcase {
+      align-self: stretch;
       display: grid;
-      place-items: center;
-      min-height: 100%;
-      margin: 0 3% 0 -3%;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      align-content: center;
+      gap: clamp(4px, 1.15vw, 16px);
+      padding: 32px clamp(12px, 3vw, 41px) 22px 0;
     }
-    .tactic-card {
-      --card-light: #f7b848;
-      --card-tint: #795315;
+    .footballix-example {
+      display: grid;
+      justify-items: center;
+      gap: 5px;
+    }
+    .footballix-card, .footballix-pawn {
+      position: relative;
+      width: min(100%, 178px);
+      container-type: inline-size;
+    }
+    .footballix-card {
+      aspect-ratio: 2 / 3;
+      filter: drop-shadow(0 14px 14px #071006b3);
+    }
+    .footballix-example:first-child .footballix-card { rotate: -4deg; }
+    .footballix-example:nth-child(3) .footballix-card { rotate: 4deg; }
+    .footballix-card-frame, .footballix-card-flag { position: absolute; }
+    .footballix-card-frame { inset: 0; width: 100%; height: 100%; }
+    .footballix-card-flag {
+      left: 15%;
+      top: 28%;
+      width: 72%;
+      height: 33%;
+      object-fit: cover;
+    }
+    .footballix-piece, .footballix-card-text, .footballix-pawn-stat {
       position: absolute;
-      display: grid;
-      grid-template-rows: 1fr auto;
-      width: clamp(146px, 17.5vw, 236px);
-      aspect-ratio: 1 / 1.34;
-      padding: 9px;
-      overflow: hidden;
-      border: 2px solid var(--card-light);
-      border-radius: 15px;
-      background: linear-gradient(155deg, #e5a43f, #302514 22%, #0e170f 60%, #695322);
-      box-shadow: 0 18px 36px #0a100bcc, inset 0 0 0 2px #fff5c24d;
+      translate: -50% -50%;
     }
-    .tactic-card::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 12%;
-      bottom: 17%;
-      background: repeating-linear-gradient(140deg, transparent 0 18px, #ffffff0e 19px 20px);
-      pointer-events: none;
+    /* Head, jersey and boot follow the positions and proportions in the Unity prefabs. */
+    .footballix-card .footballix-head { left: 50.6%; top: 49.2%; width: 46.7%; height: 30%; }
+    .footballix-card .footballix-jersey { left: 47.5%; top: 59.4%; width: 37%; height: 13.4%; }
+    .footballix-card .footballix-boot { left: 52.8%; top: 65.6%; width: 45.1%; height: 19%; }
+    .footballix-card-text, .footballix-pawn-stat {
+      font-family: "Footballix Card", system-ui, sans-serif;
+      font-weight: 800;
+      line-height: 1;
+      text-align: center;
     }
-    .tactic-card--left {
-      --card-light: #a5d5f1;
-      --card-tint: #2e6992;
-      transform: translate(-59%, 3%) rotate(-19deg) scale(.86);
-      background: linear-gradient(155deg, #88c4ea, #21364d 26%, #121d23 62%, #385c88);
-    }
-    .tactic-card--right {
-      --card-light: #d5f76e;
-      --card-tint: #5b7529;
-      transform: translate(59%, 4%) rotate(18deg) scale(.86);
-      background: linear-gradient(155deg, #b0d15f, #354126 26%, #172314 62%, #4b6029);
-    }
-    .tactic-card--center { transform: translateY(-5%) rotate(-4deg); }
-    .tactic-card img {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      min-height: 0;
-      object-fit: contain;
-      filter: drop-shadow(0 7px 10px #10110d77);
-    }
-    .card-label {
-      position: relative;
-      display: grid;
-      place-items: center;
-      min-height: 35px;
-      border: 1px solid var(--card-light);
-      border-radius: 5px;
-      background: linear-gradient(90deg, #171e18, var(--card-tint) 50%, #171e18);
+    .footballix-card-text { font-size: 11cqi; }
+    .footballix-mana, .footballix-attack, .footballix-defense {
       color: #fff;
-      font-size: clamp(.59rem, 1.14vw, .91rem);
-      font-weight: 840;
-      letter-spacing: .075em;
-      text-transform: uppercase;
+      text-shadow: 0 1px 2px #171e29;
     }
+    .footballix-mana { left: 17.7%; top: 15.2%; font-size: 13cqi; }
+    .footballix-attack { left: 31.1%; top: 24.8%; }
+    .footballix-defense { left: 70.9%; top: 24.8%; }
+    .footballix-ability {
+      left: 53.1%;
+      top: 79%;
+      width: 63%;
+      color: #242a22;
+      font-size: 5.1cqi;
+      line-height: 1.05;
+    }
+    .footballix-pawn {
+      aspect-ratio: 7.8 / 5.5;
+      filter: drop-shadow(0 8px 8px #0b160dad);
+    }
+    .footballix-pawn .footballix-head { left: 52%; top: 37.8%; width: 61.2%; height: 83.8%; }
+    .footballix-pawn .footballix-jersey { left: 47.8%; top: 61.8%; width: 48.5%; height: 37.5%; }
+    .footballix-pawn .footballix-boot { left: 54.9%; top: 79.3%; width: 59.3%; height: 52.9%; }
+    .footballix-pawn-stat {
+      left: 24.5%;
+      display: grid;
+      place-items: center;
+      width: 15%;
+      aspect-ratio: 1;
+      color: #fff;
+      font-size: 9cqi;
+      text-shadow: 0 1px 2px #20170b;
+    }
+    .footballix-pawn-stat img { position: absolute; inset: 0; width: 100%; height: 100%; }
+    .footballix-pawn-stat span { position: relative; }
+    .footballix-pawn-attack { top: 49%; }
+    .footballix-pawn-defense { top: 76%; }
 
     .gameplay {
       margin-top: 15px;
@@ -422,8 +446,7 @@
       :root { --page: calc(100% - 40px); }
       .hero { min-height: 438px; }
       .hero-content { padding-left: 26px; }
-      .card-fan { margin-right: 6%; }
-      .tactic-card { width: clamp(115px, 19vw, 170px); }
+      .footballix-showcase { padding-right: 14px; }
       .studio-details { grid-template-columns: 1fr; gap: 12px; }
     }
 
@@ -452,9 +475,7 @@
       .hero-title { margin: 16px 0 11px; font-size: clamp(2rem, 8.1vw, 3rem); }
       .hero-description { max-width: 39ch; }
       .hero-content .action { margin-top: 19px; }
-      .card-fan { min-height: 244px; margin: 0; }
-      .tactic-card { width: clamp(105px, 35vw, 151px); border-radius: 10px; padding: 6px; }
-      .card-label { min-height: 24px; }
+      .footballix-showcase { padding: 14px 14px 17px; }
       .gameplay { margin-top: 11px; }
       .gameplay dl { grid-template-columns: 1fr; }
       .gameplay dl > div { padding: 13px 17px; }
@@ -499,8 +520,8 @@
   <main class="page" id="main" tabindex="-1">
     <section class="hero" id="footballix" aria-labelledby="footballix-title">
       <picture class="hero-backdrop">
-        <source media="(max-width: 620px)" srcset="assets/footballix-stadium-small.webp">
-        <img src="assets/footballix-stadium.webp" width="1600" height="900" alt="" fetchpriority="high">
+        <source media="(max-width: 620px)" srcset="assets/footballix-pitch-mobile.jpg">
+        <img src="assets/footballix-pitch.jpg" width="1600" height="737" alt="" fetchpriority="high">
       </picture>
       <div class="hero-content">
         <p class="status">
@@ -520,20 +541,96 @@
           <span class="arrow" aria-hidden="true">↓</span>
         </a>
       </div>
-      <div class="card-fan" aria-hidden="true">
-        <div class="tactic-card tactic-card--left">
-          <img src="assets/footballix-defender.webp" width="360" height="360" alt="">
-          <div class="card-label"><span data-copy lang="tr">Defans</span><span data-copy lang="en">Defender</span></div>
+      <figure class="footballix-showcase">
+        <!-- Card 6 -->
+        <div class="footballix-example" aria-hidden="true">
+          <div class="footballix-card">
+            <img class="footballix-card-flag" src="assets/footballix-uruguay.png" alt="">
+            <img class="footballix-card-frame" src="assets/footballix-hand-frame.png" width="512" height="768" alt="">
+            <img class="footballix-piece footballix-boot" src="assets/footballix-player-boot.png" alt="">
+            <img class="footballix-piece footballix-head" src="assets/footballix-attacker.webp" alt="">
+            <img class="footballix-piece footballix-jersey" src="assets/footballix-player-jersey.png" alt="">
+            <span class="footballix-card-text footballix-mana">5</span>
+            <span class="footballix-card-text footballix-attack">8</span>
+            <span class="footballix-card-text footballix-defense">2</span>
+            <span class="footballix-card-text footballix-ability">
+              <span data-copy lang="tr">Oynandığında rakipten 2’ye kadar mana çalar.</span>
+              <span data-copy lang="en">On play, steals up to 2 mana from the opponent.</span>
+            </span>
+          </div>
+          <div class="footballix-pawn">
+            <img class="footballix-piece footballix-boot" src="assets/footballix-player-boot.png" alt="">
+            <img class="footballix-piece footballix-head" src="assets/footballix-attacker.webp" alt="">
+            <img class="footballix-piece footballix-jersey" src="assets/footballix-player-jersey.png" alt="">
+            <div class="footballix-pawn-stat footballix-pawn-attack">
+              <img src="assets/footballix-pawn-attack.png" alt=""><span>8</span>
+            </div>
+            <div class="footballix-pawn-stat footballix-pawn-defense">
+              <img src="assets/footballix-pawn-health.png" alt=""><span>2</span>
+            </div>
+          </div>
         </div>
-        <div class="tactic-card tactic-card--right">
-          <img src="assets/footballix-midfielder.webp" width="360" height="360" alt="">
-          <div class="card-label"><span data-copy lang="tr">Orta saha</span><span data-copy lang="en">Midfielder</span></div>
+        <!-- Card 21 -->
+        <div class="footballix-example" aria-hidden="true">
+          <div class="footballix-card">
+            <img class="footballix-card-flag" src="assets/footballix-england.png" alt="">
+            <img class="footballix-card-frame" src="assets/footballix-hand-frame.png" width="512" height="768" alt="">
+            <img class="footballix-piece footballix-boot" src="assets/footballix-player-boot.png" alt="">
+            <img class="footballix-piece footballix-head" src="assets/footballix-player-21.png" alt="">
+            <img class="footballix-piece footballix-jersey" src="assets/footballix-player-jersey.png" alt="">
+            <span class="footballix-card-text footballix-mana">4</span>
+            <span class="footballix-card-text footballix-attack">5</span>
+            <span class="footballix-card-text footballix-defense">5</span>
+            <span class="footballix-card-text footballix-ability">
+              <span data-copy lang="tr">Bir sonraki turuna kadar yok edilemez.</span>
+              <span data-copy lang="en">Cannot be destroyed until your next turn.</span>
+            </span>
+          </div>
+          <div class="footballix-pawn">
+            <img class="footballix-piece footballix-boot" src="assets/footballix-player-boot.png" alt="">
+            <img class="footballix-piece footballix-head" src="assets/footballix-player-21.png" alt="">
+            <img class="footballix-piece footballix-jersey" src="assets/footballix-player-jersey.png" alt="">
+            <div class="footballix-pawn-stat footballix-pawn-attack">
+              <img src="assets/footballix-pawn-attack.png" alt=""><span>5</span>
+            </div>
+            <div class="footballix-pawn-stat footballix-pawn-defense">
+              <img src="assets/footballix-pawn-health.png" alt=""><span>5</span>
+            </div>
+          </div>
         </div>
-        <div class="tactic-card tactic-card--center">
-          <img src="assets/footballix-attacker.webp" width="460" height="460" alt="">
-          <div class="card-label"><span data-copy lang="tr">Forvet</span><span data-copy lang="en">Forward</span></div>
+        <!-- Card 26 -->
+        <div class="footballix-example" aria-hidden="true">
+          <div class="footballix-card">
+            <img class="footballix-card-flag" src="assets/footballix-brazil.png" alt="">
+            <img class="footballix-card-frame" src="assets/footballix-hand-frame.png" width="512" height="768" alt="">
+            <img class="footballix-piece footballix-boot" src="assets/footballix-player-boot.png" alt="">
+            <img class="footballix-piece footballix-head" src="assets/footballix-player-26.png" alt="">
+            <img class="footballix-piece footballix-jersey" src="assets/footballix-player-jersey.png" alt="">
+            <span class="footballix-card-text footballix-mana">4</span>
+            <span class="footballix-card-text footballix-attack">5</span>
+            <span class="footballix-card-text footballix-defense">5</span>
+            <span class="footballix-card-text footballix-ability">
+              <span data-copy lang="tr">Oynandığında bir kart çekersin.</span>
+              <span data-copy lang="en">On play, draw a card.</span>
+            </span>
+          </div>
+          <div class="footballix-pawn">
+            <img class="footballix-piece footballix-boot" src="assets/footballix-player-boot.png" alt="">
+            <img class="footballix-piece footballix-head" src="assets/footballix-player-26.png" alt="">
+            <img class="footballix-piece footballix-jersey" src="assets/footballix-player-jersey.png" alt="">
+            <div class="footballix-pawn-stat footballix-pawn-attack">
+              <img src="assets/footballix-pawn-attack.png" alt=""><span>5</span>
+            </div>
+            <div class="footballix-pawn-stat footballix-pawn-defense">
+              <img src="assets/footballix-pawn-health.png" alt=""><span>5</span>
+            </div>
+          </div>
         </div>
-      </div>
+        <figcaption class="sr-only">
+          <span data-copy lang="tr">Üç Footballix kartı. Her kartın altında, oynandığında sahaya çıkan oyuncusu yer alıyor.</span>
+          <span data-copy lang="en">Three Footballix cards, each with the player it deploys on the pitch shown below.</span>
+        </figcaption>
+      </figure>
     </section>
 
     <section class="gameplay" id="footballix-gameplay" aria-labelledby="gameplay-title">
